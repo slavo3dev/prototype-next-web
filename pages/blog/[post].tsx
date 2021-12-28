@@ -1,4 +1,4 @@
-import RegisterArea from '../components/Common/RegisterArea';
+import RegisterArea from '../../components/Common/RegisterArea';
 import Link from 'next/link';
 
 const BlogDetails = () => {

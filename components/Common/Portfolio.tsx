@@ -48,30 +48,21 @@ const Portfolio: React.FC<PortfolioProps> = ({
                   {display ? (
                     <OwlCarousel {...options}>
                       <div className='content'>
-                        <h3>Manage Your Portfolio</h3>
+                        <h3>Smart Contracts Development</h3>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco.
+                          Forget about traditional contracts and create virtual agreements using Smart Contracts that can be coded and add higher security & lower transaction costs.
                         </p>
                       </div>
                       <div className='content'>
-                        <h3>Poerfull API</h3>
+                        <h3>Blockchain Consulting</h3>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco.
+                          We offer expert Blockchain consulting services to diverse business verticals and help them reap maximum benefits of the Blockchain technology at the most optimal prices.
                         </p>
                       </div>
                       <div className='content'>
-                        <h3>Vault Protection</h3>
+                        <h3>Honest advice</h3>
                         <p>
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit, sed do eiusmod tempor incididunt ut labore et
-                          dolore magna aliqua. Ut enim ad minim veniam, quis
-                          nostrud exercitation ullamco.
+                          Blockchain isn’t always necessary. Your idea may not even need it. If we think your solution is more suited to a non-blockchain solution, we’ll tell you.
                         </p>
                       </div>
                     </OwlCarousel>

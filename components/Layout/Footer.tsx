@@ -55,7 +55,7 @@ const Footer = () => {
                 </ul>
               </div>
             </div>
-            <div className='col-lg-2 col-sm-6 col-md-6'>
+            {/* <div className='col-lg-2 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>Cryptocurrency</h3>
                 <ul className='services-links'>
@@ -76,8 +76,8 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
-            <div className='col-lg-3 col-sm-6 col-md-6'>
+            </div> */}
+            {/* <div className='col-lg-3 col-sm-6 col-md-6'>
               <div className='single-footer-widget pl-5'>
                 <h3>Resources</h3>
                 <ul className='quick-links'>
@@ -98,20 +98,17 @@ const Footer = () => {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
             <div className='col-lg-3 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <h3>Contact Info</h3>
                 <ul className='footer-contact-info'>
-                  <li>Address: 2750, Quadra Street Victoria, Canada</li>
+                  <li>Address: 425, NE 22nd Street, Miami, Florida 33137</li>
                   <li>
-                    Email: <a href='mailto:hello@Prototype.Next.com'>hello@Prototype.Next.com</a>
+                    Email: <a href='mailto:slavo@slavo3.com'>slavo@slavo3.com</a>
                   </li>
                   <li>
-                    Phone: <a href='tel:+44587154756'>+1416-555-0896</a>
-                  </li>
-                  <li>
-                    Fax: <a href='tel:+44587154756'>+1416-555-0477</a>
+                    Phone: <a href='tel:+7867024261'>+1-786-702-4261</a>
                   </li>
                 </ul>
               </div>

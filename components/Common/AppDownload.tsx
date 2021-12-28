@@ -12,11 +12,9 @@ const AppDownload = () => {
             </div>
             <div className='col-lg-6 col-md-12 p-0'>
               <div className='app-download-content'>
-                <h2>Trade On The Mobile App</h2>
+                <h2>PT(NFT) Wallet for Mobile<br />Coming Soon</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                  An PT(NFT) wallet is a cryptocurrency wallet that supports the blockchain protocol NFTs are built on. It also needs to support the currency you'll buy NFTs with, such as Ether
                 </p>
                 <div className='btn-box'>
                   <a href='#' className='playstore-btn' target='_blank'>

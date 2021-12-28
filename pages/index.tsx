@@ -17,11 +17,11 @@ const Index = () => {
       <Banner />
       <Features />
      
-      <Countdown date={Date.now() + 10000000000} renderer={TokensArea} />
+      <Countdown date={Date.now() + 7900000000} renderer={TokensArea} />
       <CryptocurrencyArea />
       <OurFeature title={"NFTs are Unique"} />
       <Portfolio bgColor='bg-fff0ee' shape={true} />
-      <BuySell />
+      {/* <BuySell /> */}
       <AppDownload />
       {/* <AdvisorArea /> */}
       <RegisterArea

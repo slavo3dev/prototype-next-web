@@ -24,7 +24,7 @@ const Contact = () => {
                       <i className='bx bx-support'></i>
                     </div>
                     <p>
-                      <a href='tel:+44587154756'>+44 587 154756</a>
+                      <a href='tel:+7867024261'>+1-786-702-4261</a>
                     </p>
                   </li>
                   <li>
@@ -32,14 +32,14 @@ const Contact = () => {
                       <i className='bx bx-globe'></i>
                     </div>
                     <p>
-                      <a href='mailto:hello@Prototype.Next.com'>hello@Prototype.Next.com</a>
+                      <a href='mailto:slavo@slavo3.com'>slavo@slavo3.com</a>
                     </p>
                   </li>
                   <li>
                     <div className='icon'>
                       <i className='bx bx-map'></i>
                     </div>
-                    <p>2750, Quadra Street Victoria, Canada</p>
+                    <p>425 NE 22nd Street, Miami, Florida 33137</p>
                   </li>
                 </ul>
                 <ul className='social-links'>
@@ -59,7 +59,7 @@ const Contact = () => {
                     </a>
                   </li>
                   <li>
-                    <a href='#' target='_blank' className='instagram'>
+                    <a href='https://www.instagram.com/slavo_3/' target='_blank' className='instagram'>
                       <i className='bx bxl-instagram'></i>
                     </a>
                   </li>

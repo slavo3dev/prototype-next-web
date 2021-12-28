@@ -15,7 +15,7 @@ const TokensArea = ({ days, hours, minutes, seconds }) => {
             </div>
             <div className='col-lg-6 col-md-12'>
               <div className='tokens-content'>
-                <h2>Coming Soon - MimiCoin</h2>
+                <h2>Coming Soon - NFT Market</h2>
                 <p>
                   If you do not protect your intellectual property proactively and early, you might have to protect it defensively later.
                 </p>
@@ -35,11 +35,11 @@ const TokensArea = ({ days, hours, minutes, seconds }) => {
                     </li>
                   </ul>
                 </div>
-                <div className='token-price'>
+                {/* <div className='token-price'>
                   <div className='d-flex'>
                     <div className='box'>
                       <span>Token Price</span>
-                      <h3>1 MCoin=$0.01</h3>
+                      <h3>1 PToken=$0.01</h3>
                     </div>
                     <div className='box'>
                       <span>We Accept</span>
@@ -48,13 +48,13 @@ const TokensArea = ({ days, hours, minutes, seconds }) => {
                       </div>
                     </div>
                   </div>
-                </div>
-                <div className='total-price'>
+                </div> */}
+                {/* <div className='total-price'>
                   <span>
-                    Tokens Available On Pre-Sale <span>1000M MimiCoin</span>
+                    Tokens Available On Pre-Sale <span>1000M PToken</span>
                   </span>
-                </div>
-                <div className='btn-box'>
+                </div> */}
+                {/* <div className='btn-box'>
                   <Link href='#'>
                     <a className='default-btn'>
                       <i className='bx bxs-discount'></i> Buy Tokens 55% Off
@@ -65,13 +65,13 @@ const TokensArea = ({ days, hours, minutes, seconds }) => {
                       <i className='bx bxs-file'></i> White Pappers
                     </a>
                   </Link>
-                </div>
-                <div className='payment-methods'>
+                </div> */}
+                {/* <div className='payment-methods'>
                   <img src='/images/master-card.png' alt='image' />
                   <img src='/images/paypal.png' alt='image' />
                   <img src='/images/bitcoin2.png' alt='image' />
                   <img src='/images/visa.png' alt='image' />
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

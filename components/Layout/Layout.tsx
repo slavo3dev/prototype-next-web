@@ -6,7 +6,7 @@ import TopHeader from './TopHeader';
 
 //navbar
 import Navbar from './Navbar';
-// import NavbarTwo from './NavbarTwo';
+import NavbarTwo from './NavbarTwo';
 
 //footer
 import Footer from './Footer';
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
       </Head>
 
       {pathname === '/' ? <TopHeader /> : ''}
-      {/* {pathname === '/index-2' ? <NavbarTwo /> : <Navbar />} */}
+      {pathname === '/index-2' ? <NavbarTwo /> : <Navbar />}
   
       {children}
 

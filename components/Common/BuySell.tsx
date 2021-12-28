@@ -6,9 +6,7 @@ const BuySell = () => {
           <div className='section-title'>
             <h2>How to Buy and Sell Cryptocurrency</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco.
+              The cryptocurrency space is rapidly growing, and crypto traders need a reliable source to track their assets. CoinMarketCap is the most referenced crypto asset price-tracking website worldwide. It provides investors with well-researched, unbiased and accurate information to make the most informed cryptocurrency buying and selling decisions.
             </p>
           </div>
           <div className='row justify-content-center'>
@@ -19,9 +17,7 @@ const BuySell = () => {
                 </div>
                 <h3>Bank Transfers</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
-                  consectetur elit.
+                  Users can buy & sell Bitcoin using their bank accounts, credit cards and debit cards. You can also use the platform to trade USD Coin, a Coinbase-built stablecoin.
                 </p>
               </div>
             </div>
@@ -30,11 +26,9 @@ const BuySell = () => {
                 <div className='icon'>
                   <img src='/images/icon/icon13.png' alt='image' />
                 </div>
-                <h3>Online Wallets</h3>
+                <h3>PT Wallets</h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut. Lorem ipsum dolor sit amet,
-                  consectetur elit.
+                  PT Wallet is a self-custody wallet giving you complete control of your crypto. This means that the private keys (that represent ownership of the cryptocurrency) for your Wallet are stored directly on your mobile device.
                 </p>
               </div>
             </div>

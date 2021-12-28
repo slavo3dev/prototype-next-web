@@ -18,13 +18,11 @@ const RegisterArea: React.FC<RegisterProps> = ({
           <div className='row align-items-center justify-content-center'>
             <div className='col-lg-6 col-md-12'>
               <div className={`cta-content ${blackText}`}>
-                <h2>Start Trading on Prototype.Next</h2>
+                <h2>Coming Soon<br/>Start Selling NFTs<br /> on Prototype.Next</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                 The first step to being a crypto artist is knowing how to create digital works of art, or works created with the use of computers and software, which can be reproduced on digital media. These can be GIFs, MP4 Videos or simple images, or motion graphics, 3D creations or even real and digitized works. Create your Portfolio that knows how to best tell your digital art.
                 </p>
-                <Link href='https://www.coinbase.com/signup'>
+                <Link href='https://www.prototypenext.com'>
                   <a className='default-btn'>
                     <i className='bx bxs-user'></i> Register Now
                   </a>
