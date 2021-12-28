@@ -7,7 +7,7 @@ import OurFeature from '../components/Common/OurFeature';
 import Portfolio from '../components/Common/Portfolio';
 import BuySell from '../components/Common/BuySell';
 import AppDownload from '../components/Common/AppDownload';
-import AdvisorArea from '../components/Common/AdvisorArea';
+// import AdvisorArea from '../components/Common/AdvisorArea';
 import RegisterArea from '../components/Common/RegisterArea';
 import Countdown from 'react-countdown';
 
