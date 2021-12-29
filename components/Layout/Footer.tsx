@@ -33,22 +33,22 @@ const Footer = () => {
                 </div>
                 <ul className='social-links'>
                   <li>
-                    <a href='#' target='_blank' className='facebook'>
+                    <a href='https://www.facebook.com/prototypenext' target='_blank' className='facebook'>
                       <i className='bx bxl-facebook'></i>
                     </a>
                   </li>
                   <li>
-                    <a href='#' target='_blank' className='twitter'>
+                    <a href='https://twitter.com/slavo3dev' target='_blank' className='twitter'>
                       <i className='bx bxl-twitter'></i>
                     </a>
                   </li>
                   <li>
-                    <a href='#' target='_blank' className='linkedin'>
+                    <a href='https://www.linkedin.com/company/prototypenext' target='_blank' className='linkedin'>
                       <i className='bx bxl-linkedin'></i>
                     </a>
                   </li>
                   <li>
-                    <a href='#' target='_blank' className='instagram'>
+                    <a href='https://www.instagram.com/slavo_3/' target='_blank' className='instagram'>
                       <i className='bx bxl-instagram'></i>
                     </a>
                   </li>
