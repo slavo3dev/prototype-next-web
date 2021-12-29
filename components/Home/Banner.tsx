@@ -7,9 +7,9 @@ const Banner = () => {
             <div className='col-xl-5 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-content'>
                 <span className='sub-title'>
-                  Smart contracts are self-verifying due to automated possibilities <br />Apply to Your Business
+                  Smart Contracts are self-verifying due to automated possibilities <br />Apply to Your Business
                 </span>
-                <h1>A Trusted & Secure Decentralized Apps</h1>
+                <h1>ATrusted & Secure Decentralized Apps</h1>
                 <p>
                   Your technology partner for developing peer-to-peer Decentralized Apps.
                 </p>
