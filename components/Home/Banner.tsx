@@ -7,7 +7,7 @@ const Banner = () => {
             <div className='col-xl-5 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-content'>
                 <span className='sub-title'>
-                  First-order, and you’ll get up to $10 in free MC Token as a reward <br></br>to build Digital Ownership Rights - NFTs
+                  Smart contracts are self-verifying due to automated possibilities <br />Apply to Your Business
                 </span>
                 <h1>A Trusted & Secure Decentralized Apps</h1>
                 <p>
