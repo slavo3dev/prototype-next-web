@@ -9,7 +9,7 @@ const Banner = () => {
                 <span className='sub-title'>
                   Smart Contracts are self-verifying due to automated possibilities <br />Apply to Your Business
                 </span>
-                <h1>ATrusted & Secure Decentralized Apps</h1>
+                <h1>A Trusted & Secure Decentralized Apps</h1>
                 <p>
                   Your technology partner for developing peer-to-peer Decentralized Apps.
                 </p>
