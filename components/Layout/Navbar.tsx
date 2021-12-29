@@ -140,19 +140,19 @@ const Navbar = () => {
                     </li>
                   </ul> */}
                 </li>
-                <li className='nav-item'>
+                {/* <li className='nav-item'>
                       <Link href='/about' activeClassName='active'>
                         <a className='nav-link'>
                           <i className='bx'></i>
                           About Us
                         </a>
                       </Link>
-                </li>
-                <li className='nav-item'>
+                </li> */}
+                {/* <li className='nav-item'>
                   <Link href='/blog' activeClassName='active'>
                     <a className='nav-link'>Blog</a>
                   </Link>
-                </li>
+                </li> */}
                 {/* <li className='nav-item megamenu'>
                   <Link href='#' activeClassName='active'>
                     <a className='dropdown-toggle nav-link'>Buy</a>
@@ -278,7 +278,7 @@ const Navbar = () => {
                     <a className='nav-link'>Listings</a>
                   </Link>
                 </li>
-                <li className='nav-item megamenu support'>
+                {/* <li className='nav-item megamenu support'>
                   <Link href='/faq' activeClassName='active'>
                     <a className='dropdown-toggle nav-link'>Support</a>
                   </Link>
@@ -332,7 +332,7 @@ const Navbar = () => {
                       </Link>
                     </li>
                   </ul>
-                </li>
+                </li> */}
               </ul>
               <div className='others-option'>
                 <div className='d-flex align-items-center'>
