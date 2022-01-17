@@ -4,9 +4,9 @@ import { useStore } from '../store';
 import '../public/css/animate.min.css';
 import '../public/css/bootstrap.min.css';
 
+import '../styles/index.scss'
 
 import '../public/css/boxicons.min.css';
-
 
 import '../public/css/fontawesome.min.css';
 import '../public/css/meanmenu.min.css';
