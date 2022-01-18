@@ -7,7 +7,7 @@ interface BannerProps {
   button?: boolean;
 }
 
-const PageBanner: React.FC<BannerProps> = ({
+export const PageBanner: React.FC<BannerProps> = ({
   pageTitle,
   pageSubTitle,
   button,
@@ -42,4 +42,4 @@ const PageBanner: React.FC<BannerProps> = ({
   );
 };
 
-export default PageBanner;
+

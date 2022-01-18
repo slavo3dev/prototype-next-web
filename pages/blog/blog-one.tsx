@@ -1,4 +1,4 @@
-import PageBanner from '../../components/Common/PageBanner';
+import { PageBanner } from "components";
 import Link from 'next/link';
 
 const Blog = () => {
