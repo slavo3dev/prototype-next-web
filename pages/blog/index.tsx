@@ -1,9 +1,19 @@
 import { BlogLayout, PageBanner, AuthorInfo, CardListItem, CardItem } from "components";
 import { Row, Col } from 'react-bootstrap';
+import { getAllPosts } from "lib/api";
 
 
+interface BlogProps
+{
+  blog: {}
+}
 
-const Blog: React.FC = () => {
+
+const Blog: React.FC<BlogProps> = ( {blog} ) =>
+{
+  
+  console.log("Blog: ", blog);
+  
   return (
     <>
     <PageBanner
@@ -33,3 +43,13 @@ const Blog: React.FC = () => {
 };
 
 export default Blog;
+
+export async function getStaticProps ()
+{
+  const blog = await getAllPosts()
+  return {
+    props: {
+      blog: blog 
+    }
+  }
+}
