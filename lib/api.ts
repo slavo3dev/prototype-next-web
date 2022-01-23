@@ -9,7 +9,7 @@ export async function getAllPosts ()
     title, 
     subtitle,
     isFeatured, 
-    slug
+    "slug": slug.current
     `
 
    const blogData = await client
