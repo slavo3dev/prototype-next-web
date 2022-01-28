@@ -1,6 +1,12 @@
 import { Card } from "react-bootstrap"
 
-export const CardItem: React.FC = () =>
+interface CardPostProps
+{
+    title: string,
+    subtitle: string
+}
+
+export const CardItem: React.FC<CardPostProps> = ( {title, subtitle }) =>
 {
     return (
         <Card className={`fj-card`}>
@@ -14,8 +20,8 @@ export const CardItem: React.FC = () =>
                       width="50px"
                       alt="avatar"/>
                     <div>
-                      <Card.Title className="font-weight-bold mb-1">Placeholder Author</Card.Title>
-                      <Card.Text className="card-date">Placeholder Date</Card.Text>
+              <Card.Title className="font-weight-bold mb-1">{title}</Card.Title>
+              <Card.Text className="card-date">{ subtitle  }</Card.Text>
                     </div>
                   </Card.Header>
                   <div className="view overlay">

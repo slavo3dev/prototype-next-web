@@ -1,19 +1,19 @@
-import { BlogLayout, PageBanner, AuthorInfo, CardListItem, CardItem } from "components";
+import { BlogLayout, PageBanner, AuthorInfo, CardListItem, CardItem, BlogPostCard } from "components";
 import { Row, Col } from 'react-bootstrap';
 import { getAllPosts } from "lib/api";
 
 
 interface BlogProps
 {
-  blog: {}
+  blog: {
+    map: (post) => void
+  }
 }
 
 
-const Blog: React.FC<BlogProps> = ( {blog} ) =>
+const Blog: React.FC<BlogProps> = ( { blog } ) =>
 {
-  
-  console.log("Blog: ", blog);
-  
+  console.log("Blog: ", blog)
   return (
     <>
     <PageBanner
@@ -31,10 +31,15 @@ const Blog: React.FC<BlogProps> = ( {blog} ) =>
         <Row className="mb-5">
           <Col md="10">
              <CardListItem />
-          </Col>
-          <Col md="4">
-              <CardItem />
             </Col>
+            { blog.map( post =>
+            
+            <Col key={post.slug} md="4">
+                <CardItem
+                  title={ post.title }
+                  subtitle={ post.subtitile }
+                  />
+            </Col> )}
           </Row>
         </div>
     </BlogLayout>
@@ -49,7 +54,7 @@ export async function getStaticProps ()
   const blog = await getAllPosts()
   return {
     props: {
-      blog: blog 
+      blog: blog
     }
   }
 }
