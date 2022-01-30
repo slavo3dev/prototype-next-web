@@ -9,7 +9,9 @@ export async function getAllPosts ()
     title, 
     subtitle,
     isFeatured, 
-    "slug": slug.current
+    "slug": slug.current,
+    date,
+    "coverImage": coverImage.asset->url
     `
 
    const blogData = await client

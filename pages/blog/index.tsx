@@ -13,7 +13,6 @@ interface BlogProps
 
 const Blog: React.FC<BlogProps> = ( { blog } ) =>
 {
-  console.log("Blog: ", blog)
   return (
     <>
     <PageBanner
@@ -37,7 +36,9 @@ const Blog: React.FC<BlogProps> = ( { blog } ) =>
             <Col key={post.slug} md="4">
                 <CardItem
                   title={ post.title }
-                  subtitle={ post.subtitile }
+                  subtitle={ post.subtitle }
+                  image={ post.coverImage }
+                  date={ post.date}
                   />
             </Col> )}
           </Row>
