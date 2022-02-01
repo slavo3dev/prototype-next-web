@@ -14,8 +14,24 @@ export default createSchema({
     {
       name: 'author',
       title: 'Author',
-      type: 'document'
-
+      type: 'document',
+      fields: [
+      {
+          name: 'name',
+          title: 'Name',
+          type: 'string'
+        },
+        {
+          name: 'url',
+          title: 'Personal Website',
+          type: 'string'
+      },
+      {
+        name: 'avatar', 
+        type: 'image',
+        title: 'Avatar'
+        },
+    ]
     },
     {
       name: "blog",
@@ -51,6 +67,12 @@ export default createSchema({
         name: 'slug', 
         type: 'slug',
         title: 'Slug'
+        },
+      {
+        name: 'author', 
+        type: 'reference',
+        title: 'Author',
+        to: [{type: "author"}]
       },
       ]
     }

@@ -19,3 +19,16 @@ export async function getAllPosts ()
     
     return blogData;
 }
+
+export async function getAllAuthors ()
+{ 
+    const authorFileds = `
+     name,
+     url,
+     avatar`
+     
+    const authorData = await client
+       .fetch( `*[_type == "author"]{${authorFileds}}` );
+    
+    return authorData;
+}
