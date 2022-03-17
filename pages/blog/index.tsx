@@ -35,6 +35,7 @@ const Blog: React.FC<BlogProps> = ( { blog } ) =>
             
             <Col key={post.slug} md="4">
                 <CardItem
+                  author={post.author}
                   title={ post.title }
                   subtitle={ post.subtitle }
                   image={ post.coverImage }

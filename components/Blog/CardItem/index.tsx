@@ -5,25 +5,31 @@ interface CardPostProps
   title: string,
   subtitle: string,
   date: string, 
-  image: string
+  image: string,
+  author: {
+    avatar: string,
+    url: string,
+    name: string
+  }
 }
 
-export const CardItem: React.FC<CardPostProps> = ( { title, subtitle, date, image } ) =>
+export const CardItem: React.FC<CardPostProps> = ( { title, subtitle, date, image, author } ) =>
 {
-  console.log("url", image)
+  console.log( "url ", image )
+  console.log( "author ", author)
     return (
         <Card className={`fj-card`}>
                 <div className="card-body-wrapper">
                   <Card.Header
                     className="d-flex flex-row">
                     <img
-                      src={'https://via.placeholder.com/150'}
+                      src={author?.avatar}
                       className="rounded-circle mr-3"
                       height="50px"
                       width="50px"
                       alt="avatar"/>
                     <div>
-              <Card.Title className="font-weight-bold mb-1">Author</Card.Title>
+              <Card.Title className="font-weight-bold mb-1">{author?.name}</Card.Title>
               <Card.Text className="card-date">{ date }</Card.Text>
                     </div>
                   </Card.Header>

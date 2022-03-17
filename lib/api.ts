@@ -10,6 +10,7 @@ export async function getAllPosts ()
     subtitle,
     isFeatured, 
     "slug": slug.current,
+    'author': author->{name, 'avatar': avatar.asset->url, url},
     date,
     "coverImage": coverImage.asset->url
     `
