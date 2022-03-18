@@ -19,17 +19,20 @@ export default createSchema({
       {
           name: 'name',
           title: 'Name',
-          type: 'string'
+          type: 'string',
+          validation: (Rule) => { Rule.required() }
         },
         {
           name: 'url',
           title: 'Personal Website',
-          type: 'string'
+          type: 'string',
+          validation: (Rule) => { Rule.required() }
       },
       {
         name: 'avatar', 
         type: 'image',
-        title: 'Avatar'
+        title: 'Avatar',
+        validation: (Rule) => { Rule.required() }
         },
     ]
     },
@@ -41,32 +44,38 @@ export default createSchema({
       {
         name: 'title', 
         type: 'string',
-        title: 'Title'
+        title: 'Title',
+        validation: (Rule) => { Rule.required() }
       },
       {
         name: 'subtitle', 
         type: 'string',
-        title: 'Subtitle'
+        title: 'Subtitle',
+        validation: (Rule) => { Rule.required() }
         },
       {
         name: 'coverImage', 
         type: 'image',
-        title: 'Cover Image'
+        title: 'Cover Image',
+        validation: (Rule) => { Rule.required() }
         },
       {
         name: 'date', 
         type: 'datetime',
-        title: 'Date'
+        title: 'Date',
+        validation: (Rule) => { Rule.required() }
         },
       {
         name: 'isFeatured', 
         type: 'boolean',
-        title: 'isFeatured'
+        title: 'isFeatured',
+        validation: (Rule) => { Rule.required() }
       },
       {
         name: 'slug', 
         type: 'slug',
-        title: 'Slug'
+        title: 'Slug',
+        validation: (Rule) => { Rule.required() }
         },
       {
         name: 'author', 
