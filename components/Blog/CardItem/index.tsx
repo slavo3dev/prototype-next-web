@@ -15,14 +15,13 @@ interface CardPostProps
 
 export const CardItem: React.FC<CardPostProps> = ( { title, subtitle, date, image, author } ) =>
 {
-  console.log( "url ", image )
-  console.log( "author ", author)
     return (
         <Card className={`fj-card`}>
                 <div className="card-body-wrapper">
                   <Card.Header
                     className="d-flex flex-row">
-                    <img
+                  <img
+                      style={ { marginRight: "6px"} }
                       src={author?.avatar}
                       className="rounded-circle mr-3"
                       height="50px"

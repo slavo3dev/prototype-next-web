@@ -10,7 +10,7 @@ export const AuthorInfo: React.FC = () =>
                     width={64}
                     height={ 64 }
                     className="mr-3"
-                    src=""
+                    src="images/slavo3.png"
                     alt="Generic placeholder"
                     />
                 <Media.Body>

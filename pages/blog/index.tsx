@@ -1,7 +1,6 @@
-import { BlogLayout, PageBanner, AuthorInfo, CardListItem, CardItem, BlogPostCard } from "components";
+import { BlogLayout, PageBanner, AuthorInfo, CardItem } from "components";
 import { Row, Col } from 'react-bootstrap';
 import { getAllPosts } from "lib/api";
-
 
 interface BlogProps
 {

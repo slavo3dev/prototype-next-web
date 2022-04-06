@@ -131,11 +131,14 @@
 
   .fj-navbar {
     &-brand {
-      color: black;
       font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 1px;
-      font-weight: bold;
+
+      a {
+        color: black;
+        font-weight: bold;
+      }
     }
 
     &-item {
