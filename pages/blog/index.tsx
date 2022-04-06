@@ -28,9 +28,11 @@ const Blog: React.FC<BlogProps> = ( { blog } ) =>
         </Row>
         <hr/>
         <Row className="mb-5">
-          <Col md="10">
-             <CardListItem />
-            </Col>
+            {/* <Col md="10">
+              <CardListItem />
+            </Col> */}
+            <>
+            </>
             { blog.map( post =>
             
             <Col key={post.slug} md="4">
