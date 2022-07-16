@@ -6,6 +6,7 @@ import CryptocurrencyArea from '../components/Home/CryptocurrencyArea';
 import OurFeature from '../components/Common/OurFeature';
 import Portfolio from '../components/Common/Portfolio';
 import BuySell from '../components/Common/BuySell';
+import Services from "components/Services";
 import AppDownload from '../components/Common/AppDownload';
 // import AdvisorArea from '../components/Common/AdvisorArea';
 import RegisterArea from '../components/Common/RegisterArea';
@@ -16,7 +17,7 @@ const Index = () => {
     <>
       <Banner />
       <Features />
-     
+      <Services />
       <Countdown date={Date.now() + 7900000000} renderer={TokensArea} />
       <CryptocurrencyArea />
       <OurFeature title={"NFTs are Unique"} />
