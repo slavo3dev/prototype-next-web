@@ -17,8 +17,8 @@ const Index = () => {
     <>
       <Banner />
       <Features />
-      <Services />
-      <Countdown date={Date.now() + 7900000000} renderer={TokensArea} />
+      {/* <Services /> */}
+      {/* <Countdown date={Date.now() + 7900000000} renderer={TokensArea} /> */}
       <CryptocurrencyArea />
       <OurFeature title={"NFTs are Unique"} />
       <Portfolio bgColor='bg-fff0ee' shape={true} />

@@ -1,63 +1,72 @@
-import { BlogLayout, PageBanner, AuthorInfo, CardItem } from "components";
-import { Row, Col } from 'react-bootstrap';
-import { getAllPosts } from "lib/api";
+import { PageBanner } from "components";
+import { BlogPostCard, BlogInternalNavigation } from "components";
 
-interface BlogProps
-{
-  blog: {
-    map: (post) => void
-  }
-}
-
-
-const Blog: React.FC<BlogProps> = ( { blog } ) =>
-{
+const BlogOne = () => {
   return (
     <>
-    <PageBanner
-        pageTitle='Our Latest Articles'
-        pageSubTitle='Prototype.Next is the easiest place to start and learn about WEB 3.0, Blockchain, Dapps, NFTs....'
-          />
-    <BlogLayout>
-      <div className='blog-detail-page'>
-        <Row>
-          <Col md="8">
-            <AuthorInfo />
-          </Col>
-        </Row>
-        <hr/>
-        <Row className="mb-5">
-            {/* <Col md="10">
-              <CardListItem />
-            </Col> */}
-            <>
-            </>
-            { blog.map( post =>
-            
-            <Col key={post.slug} md="4">
-                <CardItem
-                  author={post.author}
-                  title={ post.title }
-                  subtitle={ post.subtitle }
-                  image={ post.coverImage }
-                  date={ post.date}
-                  />
-            </Col> )}
-          </Row>
+      <PageBanner
+        pageTitle='Our Articles'
+        pageSubTitle='Understand process of Software Web/Mobile Developemnt & Dicentralized Web'
+      />
+
+      <div className='blog-area ptb-100'>
+        <div className='container'>
+          <div className='row justify-content-center'>
+            <BlogPostCard
+                          category={ "Filecoin" }
+                          title={ "How Filecoin is Up 50% in a Week & Could Take More Profits" }
+                          postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+                          imgBlogUrl={ "/images/blog/blog1.jpg" }
+                          imgAuthorUrl={ '/images/user/user1.jpg' }
+                          author={ "Steven Smith" }
+                          slug={ "test"}        />
+            <BlogPostCard
+              category={"Filecoin"}
+              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
+              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+              imgBlogUrl={"/images/blog/blog1.jpg"}
+              imgAuthorUrl={'/images/user/user1.jpg' }
+               author={ "Steven Smith" }
+                          slug={ "test" }
+                      />
+            <BlogPostCard
+              category={"Filecoin"}
+              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
+              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+              imgBlogUrl={"/images/blog/blog1.jpg"}
+              imgAuthorUrl={'/images/user/user1.jpg' }
+              author={ "Steven Smith" }
+              slug={ "test"}        />
+            <BlogPostCard
+              category={"Filecoin"}
+              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
+              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+              imgBlogUrl={"/images/blog/blog1.jpg"}
+              imgAuthorUrl={'/images/user/user1.jpg' }
+              author={ "Steven Smith" }
+              slug={ "test"}/>
+            <BlogPostCard
+              category={"Filecoin"}
+              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
+              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+              imgBlogUrl={"/images/blog/blog1.jpg"}
+              imgAuthorUrl={'/images/user/user1.jpg' }
+              author={ "Steven Smith" }
+              slug={ "test"}        />
+            <BlogPostCard
+              category={"Filecoin"}
+              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
+              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
+              imgBlogUrl={"/images/blog/blog1.jpg"}
+              imgAuthorUrl={'/images/user/user1.jpg' }
+              author={ "Steven Smith" }
+              slug={ "test"}        />
+            <BlogInternalNavigation />
+          </div>
         </div>
-    </BlogLayout>
+      </div>
     </>
   );
 };
 
-export default Blog;
-
-export async function getStaticProps ()
-{
-  const blog = await getAllPosts()
-  return {
-    props: {
-      blog: blog
-    }
-  }
-}
+export default BlogOne;

@@ -7,17 +7,18 @@ interface BlogProps
     postText: string,
     imgAuthorUrl: string,
     author: string,
-    imgBlogUrl: string
+    imgBlogUrl: string,
+    slug: string
 } 
 
-export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, imgAuthorUrl, imgBlogUrl, author}) =>
+export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, imgAuthorUrl, imgBlogUrl, author, slug}) =>
 {
     return (
         <>
            <div className='col-lg-4 col-md-6'>
               <div className='single-blog-post'>
                 <div className='post-image'>
-                  <Link href='/blog-details'>
+                        <Link href={`/blog/${slug}`}>
                     <a className='d-block'>
                       <img src={imgBlogUrl} alt='image' />
                     </a>
@@ -28,7 +29,7 @@ export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, im
                 </div>
                 <div className='post-content'>
                   <h3>
-                    <Link href='/blog-details'>
+                    <Link href={`/blog/${slug}`}>
                       <a>
                         {title}
                       </a>
@@ -41,7 +42,7 @@ export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, im
                      <img src={imgAuthorUrl} alt='image' />
                      <a href='blog.html'>{author}</a>
                   </div>
-                  <Link href='/blog-details'>
+                  <Link href={`/blog/${slug}`}>
                     <a className='link-btn'>
                       <i className='bx bx-right-arrow-alt'></i>
                     </a>

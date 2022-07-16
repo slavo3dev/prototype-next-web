@@ -1,4 +1,7 @@
-const Features = () => {
+import Image from 'next/image'
+
+const Features = () =>
+{
   return (
     <>
       <div className='features-area pt-100 pb-70'>
@@ -14,7 +17,7 @@ const Features = () => {
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <div className='features-box'>
                 <div className='icon'>
-                  <img src='/images/icon/icon18.png' alt='image' />
+                  <img src='/images/icon/icon18.png' alt='Prototype.NEXT NFT/Crypto/Software Development Consulting' loading="lazy"/>
                 </div>
                 <h3>NFTs - Ownership Rights </h3>
                 <p>
@@ -22,10 +25,10 @@ const Features = () => {
                 </p>
               </div>
             </div>
-            <div className='col-lg-4 col-md-6 col-sm-6'>
+            <div className='col-lg-4 col-md-6 col-sm-6' >
               <div className='features-box'>
-                <div className='icon bg-ffefc7'>
-                  <img src='/images/icon/icon19.png' alt='image' />
+                <div className='icon bg-ffefc7' style={{ }}>
+                    <img src='/images/icon/icon19.png' alt='Prototype.NEXT NFT/Crypto/Software Development Consulting' loading="lazy"/>
                 </div>
                 <h3>Easy to Use Wallet</h3>
                 <p>
@@ -36,7 +39,7 @@ const Features = () => {
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <div className='features-box'>
                 <div className='icon bg-ffc9c2'>
-                  <img src='/images/icon/icon20.png' alt='image' />
+                  <img src='/images/icon/icon20.png' alt='Prototype.NEXT NFT/Crypto/Software Development Consulting' loading="lazy" />
                 </div>
                 <h3>dApps</h3>
                 <p>
