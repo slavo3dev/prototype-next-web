@@ -23,7 +23,7 @@
 		"react-redux": "^7.1.0",
 		"redux": "^3.6.0",
 		"redux-devtools-extension": "^2.13.2",
-		"sass": "^1.26.5",
+		":q:ss": "^1.26.5",
 		"@n8tb1t/use-scroll-position": "^2.0.3",
 		"moment": "^2.29.1",
 		"react-google-recaptcha": "^2.1.0",
