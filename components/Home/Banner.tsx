@@ -1,4 +1,33 @@
-const Banner = () => {
+import { useState } from "react";
+import axios from "axios";
+import Image from "next/image";
+
+const Banner = () =>
+{
+    
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("idle");
+  const [ errorMsg, setErrorMsg ] = useState( null );
+    
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    setState("Loading");
+    try {
+      const response = await axios.post("/api/subscribe", { email });
+      setState("Success");
+      setTimeout(() => {
+        setState("idle");
+      }, 900);
+
+      setEmail("");
+    } catch (e) {
+      setErrorMsg(e.response.data.detail);
+      setState("Error");
+      setTimeout(() => {
+        setState("idle");
+      }, 900);
+    }
+  }; 
   return (
     <>
       <div className='banner-wrapper-area'>
@@ -12,7 +41,9 @@ const Banner = () => {
                 <h1>A Trusted & Secure Decentralized Apps</h1>
                 <p>
                   Your technology partner for developing peer-to-peer Decentralized Apps.
-                </p>
+                              </p>
+                              
+                {state === "Success" && <p>Awesome, you have been subscribed to Prototype.NEXT</p> }
                 <form data-toggle='validator'>
                   <input
                     type='email'
@@ -21,8 +52,9 @@ const Banner = () => {
                     name='EMAIL'
                     required
                     autoComplete='off'
+                    onChange={(e) => { setEmail(e.target.value)}}             
                   />
-                  <button type='submit'>
+                  <button type='submit' onClick={handleSubscribe}>
                     Subscribe <i className='bx bx-chevron-right'></i>
                   </button>
                   <div id='validator-newsletter' className='form-result'></div>
@@ -31,8 +63,10 @@ const Banner = () => {
             </div>
             <div className='col-xl-7 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-image'>
-                <img src='/images/banner/banner-img3.png' alt='image' />
+                <img src='/images/banner/banner-Image3.png' alt='Prototype.NEXT - Image' loading="lazy" />
               </div>
+            {state === "Error" &&
+                 alert("Oops Something went WORONG \nPlease Try Again or You are already a member !!!")}       
             </div>
           </div>
         </div>
