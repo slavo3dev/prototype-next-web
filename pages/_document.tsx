@@ -27,9 +27,9 @@ export default class MyDocument extends Document {
 					
 				</Head>
 				<body>
-					<Main />
-					<NextScript />
-					<div id="notifications"></div>
+                    <Main />
+                    <NextScript />
+                    <div id="notifications"></div>
 				</body>
 			</Html>
 		);

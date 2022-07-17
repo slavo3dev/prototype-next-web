@@ -47,8 +47,6 @@ const Contact = () =>
 
   let notification: NotificationSatus = notificationStatus(reqStatus);
     
- 
-  console.log("Payload: ", payload)
   return (
     <>
       <PageBanner
