@@ -6,7 +6,7 @@ export const storeData = async (data) => {
       headers: {
         "Content-Type": "application/json",
       },
-    });
+    } );
     return response;
   } catch (error) {
     throw new Error(data.message || "Something went wrong!!");

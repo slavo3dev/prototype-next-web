@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { PageBanner, Notification } from '../components';
 import { notificationStatus, storeData } from "lib";
-
+import Form from 'react-bootstrap/Form';
 
 interface NotificationSatus
 { 
@@ -13,7 +13,9 @@ interface NotificationSatus
 const Contact = () =>
 {
 
-  const [payload, setPayload ] = useState( {} );
+    const [ payload, setPayload ] = useState( {
+      terms: "no"
+  } );
   const [reqStatus, setReqStatus] = useState('');
   const [reqError, setReqError] = useState();
 
@@ -43,9 +45,10 @@ const Contact = () =>
     }
   };
 
-    let notification: NotificationSatus = notificationStatus(reqStatus);
+  let notification: NotificationSatus = notificationStatus(reqStatus);
     
-
+ 
+  console.log("Payload: ", payload)
   return (
     <>
       <PageBanner
@@ -207,7 +210,10 @@ const Contact = () =>
                   </div>
                 </div>
                 <div className='col-lg-12 col-md-12 col-sm-12'>
-                                  <button type='submit' className='default-btn' onClick={ ( e ) => { sendPayload( e, payload ); } }>
+                <Form.Check value={payload.terms} type="checkbox" id="custom-switch" label="Please, Confirm That you Agree to send message" onChange={(e) => setPayload((prevState) => ({ ...prevState, terms: payload.terms === "no" ? 'accept' : "no"})) } />
+                </div>
+                <div className='col-lg-12 col-md-12 col-sm-12'>
+                    <button type='submit' className='default-btn' onClick={(e) => { payload.terms === "accept" ? sendPayload(e, payload) : alert("Please, Mark Accept Terms Box!!") }}>
                   <i className='bx bx-paper-plane'></i> Send Message
                   </button>
                   <div id='msgSubmit' className='h3 text-center hidden'></div>

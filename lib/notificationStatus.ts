@@ -1,10 +1,3 @@
-
-interface NotificationStatus  { 
-    status: string,
-    title: string,
-    message: string
-}
-
 export const notificationStatus: any  = ( reqStatus: string ) =>
 {
   if (!reqStatus) {

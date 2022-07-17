@@ -1,18 +1,18 @@
 import { MongoClient } from "mongodb";
 
 export default async (req, res) => {
-  const { subject, department, name, email, message } = req.body;
+  const { subject, phone_number, name, email, message } = req.body;
 
   const uri = `mongodb+srv://${process.env.mongodb_username}:${process.env.mongodb_password}@${process.env.mongodb_contact_cluster}.wbdvr.mongodb.net/${process.env.mongodb_database}?retryWrites=true&w=majority`;
 
   if (req.method === "POST") {
     if (
-      (!email || !email.includes("@") || !name || name.trim() === "",
+      (!email || !email.includes("@") || !name || name.trim() === "" || !phone_number|| phone_number.trim() === "",
       !subject ||
         subject.trim() === "" ||
         !message ||
         message.trim() === "" ||
-        !department)
+        !phone_number)
     ) {
       res.status(422).json({ message: "Invalid Input" });
       return;
@@ -20,9 +20,8 @@ export default async (req, res) => {
   }
 
   // Store to DB
-  const storeMessage = {
-    email,
-    department,
+    const storeMessage: any = {
+    phone_number,
     subject,
     name,
     email,
