@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PageBanner from '../components/Common/PageBanner';
+import {PageBanner} from '../components';
 
 const Faq = ({ data }) => {
   const [clicked, setClicked] = useState<boolean | null | number>(false);

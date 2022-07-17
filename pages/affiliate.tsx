@@ -1,4 +1,4 @@
-import PageBanner from '../components/Common/PageBanner';
+import {PageBanner} from '../components';
 import AccountCreate from '../components/Common/AccountCreate';
 import OurFeature from '../components/Common/OurFeature';
 import RegisterArea from '../components/Common/RegisterArea';

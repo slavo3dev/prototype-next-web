@@ -1,4 +1,4 @@
-import PageBanner from '../components/Common/PageBanner';
+import {PageBanner} from '../components';
 
 const Guides = () => {
   return (

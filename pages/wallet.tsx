@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import PageBanner from '../components/Common/PageBanner';
+import {PageBanner} from '../components';
 import RegisterArea from '../components/Common/RegisterArea';
 import AppDownload from '../components/Common/AppDownload';
 import RegisterAreaTwo from '../components/Common/RegisterAreaTwo';
