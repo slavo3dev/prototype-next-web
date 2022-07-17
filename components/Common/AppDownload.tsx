@@ -1,4 +1,4 @@
-
+import Image from "next/image";
 const AppDownload = () => {
   return (
     <>
@@ -7,7 +7,7 @@ const AppDownload = () => {
           <div className='row align-items-center m-0'>
             <div className='col-lg-6 col-md-12 p-0'>
               <div className='app-download-image'>
-                <img src='/images/app.png' alt='image' />
+                <Image src='/images/app.png' alt='Software Mobile/App Development' width={ 600 } height={400} />
               </div>
             </div>
             <div className='col-lg-6 col-md-12 p-0'>
