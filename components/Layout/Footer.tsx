@@ -147,7 +147,7 @@ const Footer = () =>
         <div className='copyright-area'>
           <div className='container'>
             <p>
-              Copyright 2021 <strong>Prototype.Next</strong>. All Rights Reserved by{' '}
+              Copyright 2022 <strong>Prototype.Next</strong>. All Rights Reserved by{' '}
               <Link href='https://www.slavo3.com/'>
                 <a target='_blank'>Slavo_3</a>
               </Link>
