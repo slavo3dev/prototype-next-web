@@ -12,19 +12,19 @@ const AppDownload = () => {
             </div>
             <div className='col-lg-6 col-md-12 p-0'>
               <div className='app-download-content'>
-                <h2>PT(NFT) Wallet for Mobile<br />Coming Soon</h2>
+                <h2>Mobile Development with the power of<br />React Native</h2>
                 <p>
-                  An PT(NFT) wallet is a cryptocurrency wallet that supports the blockchain protocol NFTs are built on. It also needs to support the currency you'll buy NFTs with, such as Ether
+                  React Native is great for mobile apps. It provides a slick, smooth and responsive user interface, while significantly reducing load time. It's also much faster and cheaper to build apps in React Native as opposed to building native ones, without the need to compromise on quality and functionality.
                 </p>
                 <div className='btn-box'>
-                  <a href='#' className='playstore-btn' target='_blank'>
+                  <a href='/contact' className='playstore-btn' target='_blank'>
                     <img src='/images/play-store.png' alt='image' />
-                    Get It On
+                    Deploy Your App | Constact us:
                     <span>Google Play</span>
                   </a>
-                  <a href='#' className='applestore-btn' target='_blank'>
+                  <a href='/contact' className='applestore-btn' target='_blank'>
                     <img src='/images/apple-store.png' alt='image' />
-                    Download on the
+                    Deploy Your App | Constact us:
                     <span>Apple Store</span>
                   </a>
                 </div>

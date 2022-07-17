@@ -18,7 +18,7 @@ const RegisterArea: React.FC<RegisterProps> = ({
           <div className='row align-items-center justify-content-center'>
             <div className='col-lg-6 col-md-12'>
               <div className={`cta-content ${blackText}`}>
-                <h2>Coming Soon<br/>Start Selling NFTs<br /> on Prototype.Next</h2>
+                <h2>Protect Your Work with <br/> NFT (non-fungible tokens) </h2>
                 <p>
                  The first step to being a crypto artist is knowing how to create digital works of art, or works created with the use of computers and software, which can be reproduced on digital media. These can be GIFs, MP4 Videos or simple images, or motion graphics, 3D creations or even real and digitized works. Create your Portfolio that knows how to best tell your digital art.
                 </p>
