@@ -1,6 +1,51 @@
-import PageBanner from '../components/Common/PageBanner';
+import { useState, useEffect } from "react";
+import { PageBanner, Notification } from '../components';
+import { notificationStatus, storeData } from "lib";
 
-const Contact = () => {
+
+interface NotificationSatus
+{ 
+      status: string 
+      title: string
+      message: string
+}
+
+const Contact = () =>
+{
+
+  const [payload, setPayload ] = useState( {} );
+  const [reqStatus, setReqStatus] = useState('');
+  const [reqError, setReqError] = useState();
+
+  useEffect(() => {
+    if (reqStatus === "success" || reqStatus === "error") {
+      const timer = setTimeout(() => {
+        setReqStatus(null);
+        setReqError(null);
+      }, 2000);
+
+      return () => clearTimeout(timer);
+    }
+  }, [reqStatus]);
+
+  const sendPayload = async (e, data) => {
+    e.preventDefault();
+
+    setReqStatus("pending");
+
+    const res = await storeData(data);
+
+    if (res.data.message === "Succesfuly Stored") {
+      setReqStatus("success");
+    } else {
+      setReqStatus("error");
+      setReqError(null);
+    }
+  };
+
+    let notification: NotificationSatus = notificationStatus(reqStatus);
+    
+
   return (
     <>
       <PageBanner
@@ -76,9 +121,7 @@ const Contact = () => {
             <div className='section-title'>
               <h2>Get In Touch!</h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco.
+                Let’s create something together. Let’s chat. Tell me about your project
               </p>
             </div>
             <form id='contactForm'>
@@ -93,6 +136,7 @@ const Contact = () => {
                       required
                       data-error='Please enter your name'
                       placeholder='Eg: Sarah Taylor'
+                      onChange={(e) => setPayload((prevState) => ({...prevState, name: e.target.value }))}
                     />
                     <div className='help-block with-errors'></div>
                   </div>
@@ -107,6 +151,11 @@ const Contact = () => {
                       required
                       data-error='Please enter your email'
                       placeholder='hello@sarah.com'
+                      onChange={(e) =>
+                        setPayload((prevState) => ({
+                                ...prevState,
+                                email: e.target.value,
+                            }))}
                     />
                     <div className='help-block with-errors'></div>
                   </div>
@@ -121,6 +170,7 @@ const Contact = () => {
                       required
                       data-error='Please enter your phone number'
                       placeholder='Enter your phone number'
+                      onChange={(e) => setPayload((prevState) => ({ ...prevState, phone_number: e.target.value}))}
                     />
                     <div className='help-block with-errors'></div>
                   </div>
@@ -135,6 +185,7 @@ const Contact = () => {
                       placeholder='Enter your subject'
                       required
                       data-error='Please enter your subject'
+                      onChange={(e) => setPayload((prevState) => ({ ...prevState, subject: e.target.value}))}                   
                     />
                     <div className='help-block with-errors'></div>
                   </div>
@@ -150,13 +201,14 @@ const Contact = () => {
                       required
                       data-error='Please enter your message'
                       placeholder='Enter message...'
+                      onChange={(e) => setPayload((prevState) => ({ ...prevState, message: e.target.value}))} 
                     ></textarea>
                     <div className='help-block with-errors'></div>
                   </div>
                 </div>
                 <div className='col-lg-12 col-md-12 col-sm-12'>
-                  <button type='submit' className='default-btn'>
-                    <i className='bx bx-paper-plane'></i> Send Message
+                                  <button type='submit' className='default-btn' onClick={ ( e ) => { sendPayload( e, payload ); } }>
+                  <i className='bx bx-paper-plane'></i> Send Message
                   </button>
                   <div id='msgSubmit' className='h3 text-center hidden'></div>
                   <div className='clearfix'></div>
@@ -165,7 +217,14 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+    </div>
+    {notification && (
+        <Notification
+          status={notification.status}
+          title={notification.title}
+          message={notification.message}
+        />
+      )}
     </>
   );
 };

@@ -1,6 +1,32 @@
 import Link from 'next/link';
+import React, { useState } from "react";
+import axios from "axios";
 
-const Footer = () => {
+const Footer = () =>
+{
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("idle");
+  const [errorMsg, setErrorMsg] = useState(null);
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+    setState("Loading");
+    try {
+      const response = await axios.post("/api/subscribe", { email });
+      setState("Success");
+      setTimeout(() => {
+        setState("idle");
+      }, 900);
+
+      setEmail("");
+    } catch (e) {
+      setErrorMsg(e.response.data.detail);
+      setState("Error");
+      setTimeout(() => {
+        setState("idle");
+      }, 900);
+    }
+  };
   return (
     <>
       <footer className='footer-area'>
@@ -11,7 +37,8 @@ const Footer = () => {
                 <a href='index.html' className='d-inline-block logo'>
                   <img src='/images/logo.png' alt='logo' />
                 </a>
-                <div className='newsletter-form'>
+                  <div className='newsletter-form'>
+                  {state === "Success" && <h2>Awesome, you have been subscribed to Prototype.NEXT</h2> }                
                   <p>SUBSCRIBE TO OUR NEWSLETTER</p>
                   <form data-toggle='validator'>
                     <input
@@ -21,10 +48,12 @@ const Footer = () => {
                       name='EMAIL'
                       required
                       autoComplete='off'
+                      onChange={(e) => setEmail(e.target.value)}
                     />
-                    <button type='submit'>
+                    <button type='submit' onClick={handleSubscribe}>
                       Subscribe Now <i className='bx bx-paper-plane'></i>
                     </button>
+                    {state === "Error" && alert("Oops Something went WORONG \nPlease Try Again or You are already a member !!!")}   
                     <div
                       id='validator-newsletter'
                       className='form-result'
