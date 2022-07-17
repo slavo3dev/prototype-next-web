@@ -1,7 +1,7 @@
 import React, { useState,useEffect } from 'react';
 import dynamic from 'next/dynamic';
 const Chart = dynamic(import('react-apexcharts'), { ssr: false });
-import PageBanner from '../components/Common/PageBanner';
+import {PageBanner} from '../components';
 
 
 const options = {
