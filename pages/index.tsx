@@ -10,7 +10,7 @@ import Portfolio from '../components/Common/Portfolio';
 import AppDownload from '../components/Common/AppDownload';
 // import AdvisorArea from '../components/Common/AdvisorArea';
 import RegisterArea from '../components/Common/RegisterArea';
-import Countdown from 'react-countdown';
+// import Countdown from 'react-countdown';
 
 const Index = () => {
   return (

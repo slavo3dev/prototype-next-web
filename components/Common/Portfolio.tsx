@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import Image from 'next/image'
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -73,7 +74,7 @@ const Portfolio: React.FC<PortfolioProps> = ({
               </div>
               <div className='col-xl-7 col-lg-6 col-md-12 p-0'>
                 <div className='image text-center'>
-                  <img src='/images/portfolio/portfolio-img1.png' alt='image' />
+                  <Image src='/images/portfolio/portfolio-img1.png' alt='Prototype.NEXT | Blockchain | web3.0 | NFT | Crypto' width={ 700 } height={500}/>
                 </div>
               </div>
             </div>
@@ -81,7 +82,7 @@ const Portfolio: React.FC<PortfolioProps> = ({
         </div>
         {shape && (
           <div className='shape11'>
-            <img src='/images/shape/shape11.png' alt='image' />
+                <Image src='/images/shape/shape11.png' alt='Prototype.NEXT | Blockchain | web3.0 | NFT | Crypto' width={ 300 } height={300} />
           </div>
         )}
       </div>

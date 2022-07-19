@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image'
 
 interface RegisterProps {
   bgGradient?: string;
@@ -31,25 +32,25 @@ const RegisterArea: React.FC<RegisterProps> = ({
             </div>
             <div className='col-lg-6 col-md-12'>
               <div className='cta-image'>
-                <img src={ctaImage} alt='image' />
+                <Image src={ ctaImage } alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 500 } height={ 500 } />
               </div>
             </div>
           </div>
         </div>
         <div className='shape6'>
-          <img src='/images/shape/shape6.png' alt='image' />
+          <Image src='/images/shape/shape6.png' alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 50 } height={ 50 } />
         </div>
         <div className='shape7'>
-          <img src='/images/shape/shape7.png' alt='image' />
+          <Image src='/images/shape/shape7.png' alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 40 } height={ 40 } />
         </div>
         <div className='shape8'>
-          <img src='/images/shape/shape8.png' alt='image' />
+          <Image src='/images/shape/shape8.png' alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 100 } height={ 100 } />
         </div>
         <div className='shape9'>
-          <img src='/images/shape/shape9.png' alt='image' />
+          <Image src='/images/shape/shape9.png' alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 150 } height={ 150 } />
         </div>
         <div className='shape15'>
-          <img src='/images/shape/shape15.png' alt='image' />
+            <Image src='/images/shape/shape15.png' alt='Prototype.NEXT | Crypto | BlockChain Development | Web3.0 |' width={ 150 } height={ 150 } />
         </div>
       </div>
     </>

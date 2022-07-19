@@ -1,5 +1,7 @@
+import Image from 'next/image'
 
-const OurFeature = ({title}:{title?:string}) => {
+const OurFeature = ( { title }: { title?: string; } ) =>
+{
   return (
     <>
       <div className='features-area pt-100 pb-70'>
@@ -13,7 +15,7 @@ const OurFeature = ({title}:{title?:string}) => {
           <div className='row align-items-center justify-content-center'>
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <div className='single-features-box'>
-                <img src='/images/features/features-img1.png' alt='image' />
+                 <Image src='/images/features/features-img1.png' alt='Prototype.NEXT | Blockchain | web3.0 | NFT | Crypto' width={ 300 } height={300 } />
                 <h3>Represent Ownership</h3>
                 <p>
                   NFTs are tokens that you can use to represent ownership of your unique items. They let you tokenise things like art, collectibles, real estate, certificates...
@@ -22,7 +24,7 @@ const OurFeature = ({title}:{title?:string}) => {
             </div>
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <div className='single-features-box'>
-                <img src='/images/features/features-img2.png' alt='image' />
+                <Image src='/images/features/features-img2.png' alt='Prototype.NEXT | Blockchain | web3.0 | NFT | Crypto' width={ 300 } height={300 }/>
                 <h3>NFTs as investment</h3>
                 <p>
                   NFTs are digital assets that act as secure documentation of ownership and can be a worthwhile investment for collectors
@@ -31,7 +33,7 @@ const OurFeature = ({title}:{title?:string}) => {
             </div>
             <div className='col-lg-4 col-md-6 col-sm-6'>
               <div className='single-features-box'>
-                <img src='/images/features/features-img3.png' alt='image' />
+                <Image src='/images/features/features-img3.png' alt='Prototype.NEXT | Blockchain | web3.0 | NFT | Crypto' width={ 300 } height={300 } />
                 <h3>NFTs, help YOU to reach new audiences.</h3>
                 <p>
                   Considered the new disruptor to the art market, NFTs are making waves in a sector previously occupied exclusively by traditional investors.
