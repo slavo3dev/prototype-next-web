@@ -51,7 +51,7 @@ const CryptocurrencyArea = () => {
                     <tr key={data.id}>
                       <td>
                         <div className='d-flex align-items-center crypto-image'>
-                          <img src={data.image} alt='image' />
+                          <img src={data.image} alt='image' loading='lazy'/>
                           <h3 className='mb-0 crypto-name'>{data.name}</h3>
                         </div>
                       </td>
