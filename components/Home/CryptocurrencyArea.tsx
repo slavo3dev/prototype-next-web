@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import axios from 'axios';
+import Image from 'next/image'
 
 interface ApiData {
   id: number;
@@ -51,8 +52,9 @@ const CryptocurrencyArea = () => {
                     <tr key={data.id}>
                       <td>
                         <div className='d-flex align-items-center crypto-image'>
-                          <img src={data.image} alt='image' loading='lazy'/>
-                          <h3 className='mb-0 crypto-name'>{data.name}</h3>
+                            <Image src={ data.image } alt='Prototype.NEXT' width={ 20 } height={ 20 } />
+                            {console.log("Data: ", data.image)}
+                            <h3 className='mb-0 crypto-name'>{data.name}</h3>
                         </div>
                       </td>
                       <td>USD {data.current_price}</td>
