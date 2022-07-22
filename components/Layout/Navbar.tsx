@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import Link from '../../utils/ActiveLink';
+import Image from 'next/image'
 
 const Navbar = () => {
 
@@ -38,7 +39,7 @@ const Navbar = () => {
               <div className='logo'>
                 <Link href='/'>
                   <a>
-                    <img src='/images/logo.png' alt='logo' />
+                    <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
                   </a>
                 </Link>
               </div>
@@ -76,7 +77,7 @@ const Navbar = () => {
           <div className='container'>
             <Link href='/'>
               <a className='navbar-brand'>
-                <img src='/images/logo.png' alt='logo' />
+                <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
               </a>
             </Link>
             <div className='collapse navbar-collapse mean-menu'>

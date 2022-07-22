@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from "react";
 import axios from "axios";
+import Image from 'next/image'
 
 const Footer = () =>
 {
@@ -35,7 +36,7 @@ const Footer = () =>
             <div className='col-lg-4 col-sm-6 col-md-6'>
               <div className='single-footer-widget'>
                 <a href='index.html' className='d-inline-block logo'>
-                  <img src='/images/logo.png' alt='logo' />
+                   <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
                 </a>
                   <div className='newsletter-form'>
                   {state === "Success" && <h2>Awesome, you have been subscribed to Prototype.NEXT</h2> }                
