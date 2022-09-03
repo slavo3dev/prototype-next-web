@@ -63,7 +63,8 @@ const Banner = () =>
             </div>
             <div className='col-xl-7 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-image'>
-             <Image src='/images/banner/banner-img5.webp' alt='Prototype.NEXT - Image' width={ 600 } height={500} />
+             <Image src='/images/banner/banner-img5.webp' alt='Prototype.NEXT - Image' width={ 600 } height={500} layout="responsive"
+  loading="lazy" />
               </div>
             {state === "Error" &&
                  alert("Oops Something went WORONG \nPlease Try Again or You are already a member !!!")}       
