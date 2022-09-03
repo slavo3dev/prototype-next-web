@@ -2,15 +2,12 @@ module.exports = {
   images: {
     domains: ['assets.coingecko.com'],
   },
-    webpack: (config, { isServer }) => {
-      // Fixes npm packages that depend on `fs` module
-      if (!isServer) {
-        config.node = {
-          fs: 'empty',
-          net: 'empty'
-        }
-      }
-  
-      return config
+   future: {
+        webpack5: true
+    },
+    webpack: function (config, options) {
+        console.log(options.webpack.version); // 5.18.0
+        config.experiments = {};
+        return config;
     }
   }
