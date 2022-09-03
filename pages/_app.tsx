@@ -33,18 +33,17 @@ export default function App({ Component, pageProps }) {
 
     return (
         <>
-            <Preloader />
             {
-            // !loading ? (
-            //     <Provider store={store}>
-            //         <Layout>
-            //             <Component {...pageProps} />
-            //             {/* Go Top Button */}
-            //             <GoTop/>
-            //         </Layout>
-            //     </Provider>
-            //     ) : (
-            //         <Preloader /> )
+            !loading ? (
+                <Provider store={store}>
+                    <Layout>
+                        <Component {...pageProps} />
+                        {/* Go Top Button */}
+                        <GoTop/>
+                    </Layout>
+                </Provider>
+                ) : (
+                    <Preloader /> )
             }
         </>
     );
