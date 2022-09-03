@@ -17,34 +17,19 @@ import '../public/css/responsive.css';
 
 import Layout from '../components/Layout/Layout';
 import GoTop from '../components/Shared/GoTop';
-import { Preloader } from "components";
 
 export default function App({ Component, pageProps }) {
     const store = useStore( pageProps.initialReduxState );
-    const [loading, setLoading] = useState(false);
-    
-    useEffect( () =>
-    {
-        setLoading(true);
-        setTimeout(() => {
-        setLoading(false);
-        }, 1000);
-    }, []);
-
+   
     return (
         <>
-            {
-            !loading ? (
-                <Provider store={store}>
-                    <Layout>
-                        <Component {...pageProps} />
-                        {/* Go Top Button */}
-                        <GoTop/>
-                    </Layout>
-                </Provider>
-                ) : (
-                    <Preloader /> )
-            }
+            <Provider store={store}>
+                <Layout>
+                    <Component {...pageProps} />
+                    {/* Go Top Button */}
+                    <GoTop/>
+                 </Layout>
+            </Provider>
         </>
     );
 }
