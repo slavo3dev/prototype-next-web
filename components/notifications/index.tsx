@@ -9,8 +9,8 @@ interface PropsNotification {
     message: string, 
     status: string  
 }
-export const Notification = (props) => {
-  const { title, message, status }: PropsNotification = props;
+export const Notification: React.FC<PropsNotification> = (props) => {
+  const { title, message, status } = props;
 
   let statusClasses = "";
 

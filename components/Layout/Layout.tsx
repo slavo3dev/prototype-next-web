@@ -18,7 +18,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Head>
-        <title>Prototype.NEXT - Decentralized App & Cryptocurrency</title>
+        <title>Prototype.NEXT - Decentralized App & Cryptocurrency & Proof Of Ownership</title>
         <meta
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'

@@ -2,6 +2,7 @@ import { Provider } from 'react-redux';
 import { useStore } from '../store';
 import { useEffect, useState } from "react";
 
+
 import '../public/css/animate.min.css';
 import '../public/css/bootstrap.min.css';
 
@@ -16,6 +17,7 @@ import '../public/css/responsive.css';
 
 import Layout from '../components/Layout/Layout';
 import GoTop from '../components/Shared/GoTop';
+import { Preloader } from "components";
 
 export default function App({ Component, pageProps }) {
     const store = useStore( pageProps.initialReduxState );
@@ -31,19 +33,18 @@ export default function App({ Component, pageProps }) {
 
     return (
         <>
+            <Preloader />
             {
-            !loading ? (
-                <Provider store={store}>
-                    <Layout>
-                        <Component {...pageProps} />
-                        {/* Go Top Button */}
-                        <GoTop/>
-                    </Layout>
-                </Provider>
-                ) : (
-                    <>
-                        <h1>Loading...</h1>
-                     </> )
+            // !loading ? (
+            //     <Provider store={store}>
+            //         <Layout>
+            //             <Component {...pageProps} />
+            //             {/* Go Top Button */}
+            //             <GoTop/>
+            //         </Layout>
+            //     </Provider>
+            //     ) : (
+            //         <Preloader /> )
             }
         </>
     );
