@@ -1,2 +1,2 @@
-# Cryto & NFT Blog
+# Cryto 
 
