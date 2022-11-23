@@ -1,67 +1,44 @@
 import { PageBanner } from "components";
+import type { NextPage } from "next";
 import { BlogPostCard, BlogInternalNavigation } from "components";
+import { getAllPosts } from "lib/post-lib";
+// import { useRouter } from "next/router";
 
-const BlogOne = () => {
+const Blog: NextPage = ( { posts }: any ) =>
+{
+
+//   const router = useRouter
+//   function findCategoryHandle ( category: string )
+// 	{
+// 		const fullPath = `/category/${category}`;
+// 		router.push(fullPath);
+// 	}
+    
+  
+    console.log( "Posts: ", posts );
+
   return (
     <>
       <PageBanner
         pageTitle='Our Articles'
-        pageSubTitle='Understand process of Software Web/Mobile Developemnt & Dicentralized Web'
+        pageSubTitle='Dicentralized Web | Blockchain | NFT | Crypto'
       />
 
       <div className='blog-area ptb-100'>
         <div className='container'>
-          <div className='row justify-content-center'>
-            <BlogPostCard
-                          category={ "Filecoin" }
-                          title={ "How Filecoin is Up 50% in a Week & Could Take More Profits" }
-                          postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-                          imgBlogUrl={ "/images/blog/blog1.jpg" }
-                          imgAuthorUrl={ '/images/user/user1.jpg' }
-                          author={ "Steven Smith" }
-                          slug={ "test"}        />
-            <BlogPostCard
-              category={"Filecoin"}
-              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
-              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-              imgBlogUrl={"/images/blog/blog1.jpg"}
-              imgAuthorUrl={'/images/user/user1.jpg' }
-               author={ "Steven Smith" }
-                          slug={ "test" }
-                      />
-            <BlogPostCard
-              category={"Filecoin"}
-              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
-              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-              imgBlogUrl={"/images/blog/blog1.jpg"}
-              imgAuthorUrl={'/images/user/user1.jpg' }
-              author={ "Steven Smith" }
-              slug={ "test"}        />
-            <BlogPostCard
-              category={"Filecoin"}
-              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
-              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-              imgBlogUrl={"/images/blog/blog1.jpg"}
-              imgAuthorUrl={'/images/user/user1.jpg' }
-              author={ "Steven Smith" }
-              slug={ "test"}/>
-            <BlogPostCard
-              category={"Filecoin"}
-              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
-              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-              imgBlogUrl={"/images/blog/blog1.jpg"}
-              imgAuthorUrl={'/images/user/user1.jpg' }
-              author={ "Steven Smith" }
-              slug={ "test"}        />
-            <BlogPostCard
-              category={"Filecoin"}
-              title={"How Filecoin is Up 50% in a Week & Could Take More Profits"}
-              postText={ "Borem ipsum dolor sit amet, adhuc iriure dissentias est in, est ne diam graece tincidunt." }
-              imgBlogUrl={"/images/blog/blog1.jpg"}
-              imgAuthorUrl={'/images/user/user1.jpg' }
-              author={ "Steven Smith" }
-              slug={ "test"}        />
-            <BlogInternalNavigation />
+            <div className='row justify-content-center'>
+                {
+                    posts.map( post => <BlogPostCard
+                        key={post.title + Math.floor(Math.random() * 100) }
+                        category={post.category}
+                        title={post.title}
+                        postText={post.excerpt}
+                        imgBlogUrl={ `/images/post-img/${post.image}` }
+                        imgAuthorUrl={ '/images/user/user1.jpg' }
+                        author={ post.author }
+                        slug={ post.slug } /> )
+                }      
+            {/* <BlogInternalNavigation /> */}
           </div>
         </div>
       </div>
@@ -69,4 +46,15 @@ const BlogOne = () => {
   );
 };
 
-export default BlogOne;
+export function getStaticProps() {
+	const featuredPost = getAllPosts(); 
+
+	return {
+		props: {
+			posts: featuredPost
+		},
+		revalidate: 60
+	};
+}
+
+export default Blog;

@@ -1,9 +1,12 @@
-import RegisterArea from '../../components/Common/RegisterArea';
+import RegisterArea from 'components/Common/RegisterArea';
 import Link from 'next/link';
 
-const BlogDetails = () => {
-  return (
-    <>
+
+export const BlogPostExample = () =>
+{ 
+    
+    return (
+        <>
       <div className='blog-details-area ptb-100'>
         <div className='container'>
           <div className='blog-details-header row align-items-center justify-content-center'>
@@ -361,7 +364,5 @@ const BlogDetails = () => {
       </div>
       <RegisterArea ctaImage='/images/man.png' />
     </>
-  );
+)
 };
-
-export default BlogDetails;
