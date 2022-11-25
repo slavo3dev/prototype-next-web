@@ -3,6 +3,7 @@ import type { NextPage } from "next";
 import { BlogPostCard, BlogInternalNavigation } from "components";
 import { getAllPosts } from "lib/post-lib";
 // import { useRouter } from "next/router";
+import { PostType } from "@/Types/PostType"; 
 
 const Blog: NextPage = ( { posts }: any ) =>
 {
@@ -14,21 +15,17 @@ const Blog: NextPage = ( { posts }: any ) =>
 // 		router.push(fullPath);
 // 	}
     
-  
-    console.log( "Posts: ", posts );
-
   return (
     <>
       <PageBanner
         pageTitle='Our Articles'
         pageSubTitle='Dicentralized Web | Blockchain | NFT | Crypto'
       />
-
       <div className='blog-area ptb-100'>
         <div className='container'>
             <div className='row justify-content-center'>
                 {
-                    posts.map( post => <BlogPostCard
+                    posts.map( (post: PostType) => <BlogPostCard
                         key={post.title + Math.floor(Math.random() * 100) }
                         category={post.category}
                         title={post.title}

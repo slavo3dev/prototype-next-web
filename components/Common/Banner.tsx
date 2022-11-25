@@ -68,7 +68,7 @@ const Banner = () => {
     setToggleStateTwo(!toggleStateTwo);
   };
 
-  const toggleSelected = (cat, index) => {
+    const toggleSelected = ( cat: any, index: number) => {
     if (clicked === index) {
       return setClicked(null);
     }
@@ -78,7 +78,7 @@ const Banner = () => {
     setcoinSymbol(cat.symbol.toUpperCase());
   };
 
-  const toggleSelectedTwo = (cat, index) => {
+  const toggleSelectedTwo = (cat: any, index: number) => {
     if (clicked === index) {
       return setClicked(null);
     }

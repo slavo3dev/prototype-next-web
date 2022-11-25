@@ -14,9 +14,9 @@ const Navbar = () => {
     let elementId = document.getElementById('navbar');
     document.addEventListener('scroll', () => {
       if (window.scrollY > 170) {
-        elementId.classList.add('is-sticky');
+        elementId?.classList.add('is-sticky');
       } else {
-        elementId.classList.remove('is-sticky');
+        elementId?.classList.remove('is-sticky');
       }
     });
     window.scrollTo(0, 0);
@@ -38,9 +38,7 @@ const Navbar = () => {
               </div>
               <div className='logo'>
                 <Link href='/'>
-                  <a>
                     <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
-                  </a>
                 </Link>
               </div>
 
@@ -75,16 +73,14 @@ const Navbar = () => {
         </div>
         <nav className={showMenu? 'show navbar navbar-expand-md navbar-light':'navbar navbar-expand-md navbar-light hide-menu'}>
           <div className='container'>
-            <Link href='/'>
-              <a className='navbar-brand'>
+            <Link className='navbar-brand' href='/'>
                 <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
-              </a>
             </Link>
             <div className='collapse navbar-collapse mean-menu'>
               <ul className='navbar-nav'>
                 <li className='nav-item'>
-                  <Link href='/' activeClassName='active'>
-                    <a className='nav-link'>Home</a>
+                  <Link className='nav-link' href='/' activeClassName='active'>
+                    Home
                     {/* <a className='dropdown-toggle nav-link'>Home</a> */}
                   </Link>
                   {/*
@@ -275,8 +271,8 @@ const Navbar = () => {
                   </ul>
                 </li> */}
                 <li className='nav-item'>
-                  <Link href='/prices' activeClassName='active'>
-                    <a className='nav-link'>Listings</a>
+                  <Link className='nav-link' href='/prices' activeClassName='active'>
+                    Listings
                   </Link>
                 </li>
                 {/* <li className='nav-item megamenu support'>
@@ -345,10 +341,8 @@ const Navbar = () => {
                     </Link>
                   </div> */}
                   <div className='option-item'>
-                  <Link href='/contact' activeClassName='active'>
-                      <a className='default-btn'>
+                  <Link href='/contact' activeClassName='active' className='default-btn'>
                       <i className='bx bxs-contact' ></i> Contact Us
-                      </a>
                     </Link>
                   </div>
                   <div className='option-item'>

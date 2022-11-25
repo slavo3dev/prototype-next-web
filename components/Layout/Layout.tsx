@@ -11,7 +11,7 @@ import NavbarTwo from './NavbarTwo';
 //footer
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
+const Layout = ({ children }: any) => {
   const router = useRouter();
   const { pathname } = router;
 

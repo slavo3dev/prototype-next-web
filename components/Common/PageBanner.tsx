@@ -22,10 +22,8 @@ export const PageBanner: React.FC<BannerProps> = ({
             <h1>{pageTitle}</h1>
             <p>{pageSubTitle}</p>
             {showBUtton && (
-              <Link href='https://www.coinbase.com/accounts'>
-                <a className='default-btn'>
+              <Link className='default-btn' href='https://www.coinbase.com/accounts'> 
                   <i className='bx bxs-user'></i> Become an Affiliate
-                </a>
               </Link>
             )}
           </div>

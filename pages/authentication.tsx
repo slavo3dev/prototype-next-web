@@ -16,10 +16,8 @@ const Authentication = () => {
             </div>
           </div>
         </div>
-        <Link href='/'>
-          <a className='back-icon'>
+        <Link className='back-icon' href='/'>
             <i className='bx bx-x'></i>
-          </a>
         </Link>
       </div>
     </>

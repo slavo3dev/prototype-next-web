@@ -29,14 +29,14 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
-                    <a className='link-btn'>Buy</a>
+                  <Link legacyBehavior className='link-btn' href='/buy'>
+                  Buy
                   </Link>
-                  <Link href='/sell'>
-                    <a className='link-btn'>Sell</a>
+                  <Link legacyBehavior className='link-btn' href='/sell'>
+                    Sell
                   </Link>
-                  <Link href='/cryptocurrency-details'>
-                    <a className='link-btn'>Info</a>
+                  <Link legacyBehavior className='link-btn' href='/cryptocurrency-details'>
+                     Info
                   </Link>
                 </div>
               </div>
@@ -53,14 +53,14 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
-                    <a className='link-btn'>Buy</a>
+                  <Link className='link-btn'  href='/buy'>
+                    Buy
                   </Link>
-                  <Link href='/sell'>
-                    <a className='link-btn'>Sell</a>
+                  <Link className='link-btn' href='/sell'>
+                      Sell
                   </Link>
-                  <Link href='/cryptocurrency-details'>
-                    <a className='link-btn'>Info</a>
+                  <Link className='link-btn' href='/cryptocurrency-details'>
+                    Info
                   </Link>
                 </div>
               </div>
@@ -77,14 +77,14 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
-                    <a className='link-btn'>Buy</a>
+                  <Link className='link-btn' href='/buy'>
+                    Buy
                   </Link>
-                  <Link href='/sell'>
-                    <a className='link-btn'>Sell</a>
+                  <Link className='link-btn' href='/sell'>
+                   Sell
                   </Link>
-                  <Link href='/cryptocurrency-details'>
-                    <a className='link-btn'>Info</a>
+                  <Link className='link-btn' href='/cryptocurrency-details'>
+                    Info
                   </Link>
                 </div>
               </div>
@@ -101,13 +101,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -125,13 +125,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link  legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -152,10 +152,10 @@ const Cryptocurrency = () => {
                   <Link href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -173,13 +173,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -197,13 +197,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -221,13 +221,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -245,13 +245,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -269,13 +269,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>
@@ -293,13 +293,13 @@ const Cryptocurrency = () => {
                   </div>
                 </div>
                 <div className='btn-box'>
-                  <Link href='/buy'>
+                  <Link legacyBehavior href='/buy'>
                     <a className='link-btn'>Buy</a>
                   </Link>
-                  <Link href='/sell'>
+                  <Link legacyBehavior href='/sell'>
                     <a className='link-btn'>Sell</a>
                   </Link>
-                  <Link href='/cryptocurrency-details'>
+                  <Link legacyBehavior href='/cryptocurrency-details'>
                     <a className='link-btn'>Info</a>
                   </Link>
                 </div>

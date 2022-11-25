@@ -4,7 +4,7 @@ import Image from 'next/image'
 interface RegisterProps {
   bgGradient?: string;
   blackText?: string;
-  ctaImage?: string;
+  ctaImage: string;
 }
 
 const RegisterArea: React.FC<RegisterProps> = ({
@@ -23,10 +23,8 @@ const RegisterArea: React.FC<RegisterProps> = ({
                 <p>
                  The first step to being a crypto artist is knowing how to create digital works of art, or works created with the use of computers and software, which can be reproduced on digital media. These can be GIFs, MP4 Videos or simple images, or motion graphics, 3D creations or even real and digitized works. Create your Portfolio that knows how to best tell your digital art.
                 </p>
-                <Link href='/contact'>
-                  <a className='default-btn'>
+                <Link  className='default-btn' href='/contact'>
                     <i className='bx bxs-user'></i> Register Now
-                  </a>
                 </Link>
               </div>
             </div>

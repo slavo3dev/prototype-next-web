@@ -33,7 +33,7 @@ const Banner = () => {
     setToggleState(!toggleState);
   };
 
-  const toggleSelected = (cat, index) => {
+  const toggleSelected = (cat: any, index: number) => {
     if (clicked === index) {
       return setClicked(null);
     }
@@ -158,7 +158,7 @@ const Banner = () => {
                 </button>
               </div>
             </div>
-            <Link href='https://www.coinbase.com/accounts'>
+            <Link legacyBehavior href='https://www.coinbase.com/accounts'>
               <button type='submit'>
                 <i className='bx bxs-hand-right'></i> Buy With Visa
               </button>
@@ -174,7 +174,7 @@ const Banner = () => {
                   Ut enim ad minim veniam, quis nostrud exercitation ullamco
                   laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <Link href='https://www.coinbase.com/signup'>
+                <Link legacyBehavior href='https://www.coinbase.com/signup'>
                   <a className='default-btn'>
                     <i className='bx bxs-user'></i> Register Now
                   </a>

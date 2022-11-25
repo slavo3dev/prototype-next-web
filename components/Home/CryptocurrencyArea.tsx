@@ -72,8 +72,8 @@ const CryptocurrencyArea = () => {
                         )}
                       </td>
                       <td>
-                        <Link href='https://www.coinbase.com/accounts'>
-                          <a className='link-btn' target="_blank">BUY</a>
+                        <Link className='link-btn' href='https://www.coinbase.com/accounts' target="_blank">
+                         BUY
                         </Link>
                       </td>
                     </tr>
@@ -82,7 +82,7 @@ const CryptocurrencyArea = () => {
             </table>
           </div>
           <div className='more-cryptocurrency-box text-center'>
-            <Link href='/prices'>
+            <Link legacyBehavior href='/prices'>
               <a className='default-btn'>
                 <i className='bx bx-purchase-tag-alt'></i> See More Prices
               </a>

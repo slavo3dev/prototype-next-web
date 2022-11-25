@@ -12,9 +12,9 @@ const NavbarTwo = () => {
     let elementId = document.getElementById('navbar');
     document.addEventListener('scroll', () => {
       if (window.scrollY > 170) {
-        elementId.classList.add('is-sticky');
+        elementId?.classList.add('is-sticky');
       } else {
-        elementId.classList.remove('is-sticky');
+        elementId?.classList.remove('is-sticky');
       }
     });
     window.scrollTo(0, 0);
@@ -73,7 +73,7 @@ const NavbarTwo = () => {
           }
         >
           <div className='container'>
-            <Link href='/'>
+            <Link legacyBehavior href='/'>
               <a className='navbar-brand'>
                 <img src='/images/logo.png' alt='logo' />
               </a>

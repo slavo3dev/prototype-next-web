@@ -12,10 +12,8 @@ const RegisterAreaTwo = ({ title }: { title: string }) => {
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco.
             </p>
-            <Link href='https://www.coinbase.com/signup'>
-              <a className='default-btn'>
+            <Link className='default-btn' href='https://www.coinbase.com/signup'>
                 <i className='bx bxs-user'></i> Register Now
-              </a>
             </Link>
           </div>
         </div>

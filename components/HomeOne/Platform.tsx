@@ -142,11 +142,9 @@ const Platform = () => {
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                       ullamco.
                     </p>
-                    <Link href='/cryptocurrency-details'>
-                      <a className='link-btn'>
+                    <Link className='link-btn' href='/cryptocurrency-details'>
                         {' '}
                         View More <i className='bx bx-chevron-right'></i>
-                      </a>
                     </Link>
                   </div>
                 </div>
@@ -168,11 +166,8 @@ const Platform = () => {
                       aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                       ullamco.
                     </p>
-                    <Link href='/cryptocurrency-details'>
-                      <a className='link-btn'>
-                        {' '}
+                    <Link className='link-btn' href='/cryptocurrency-details'>
                         View More <i className='bx bx-chevron-right'></i>
-                      </a>
                     </Link>
                   </div>
                 </div>
