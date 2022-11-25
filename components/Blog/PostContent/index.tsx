@@ -3,6 +3,7 @@ import { FC } from "react";
 import classes from "./postcontent.module.css";
 import { PostHeader } from "../PostHeader";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from 'rehype-raw'
 import Image from "next/image";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
@@ -53,7 +54,7 @@ export const PostContent: FC<PostContentDataType> = ({ post }) =>
 	return (
 		<article className={classes.content}>
 			<PostHeader title={post.title} imgSrc={imgPath} />
-			<ReactMarkdown components={customRenderers}>{post.content}</ReactMarkdown> 
+			<ReactMarkdown components={customRenderers} rehypePlugins={[rehypeRaw]}>{post.content}</ReactMarkdown> 
 		</article>
 	);
 };

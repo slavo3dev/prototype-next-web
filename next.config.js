@@ -1,13 +1,12 @@
 module.exports = {
   images: {
-    domains: ['assets.coingecko.com'],
+    domains: ["assets.coingecko.com"],
   },
-   future: {
-        webpack5: true
-    },
-    webpack: function (config, options) {
-        console.log(options.webpack.version); // 5.18.0
-        config.experiments = {};
-        return config;
-    }
-  }
+  future: {
+    webpack5: true,
+  },
+  webpack: function (config, options) {
+    config.experiments = {};
+    return config;
+  },
+};

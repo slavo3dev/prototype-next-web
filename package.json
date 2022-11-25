@@ -39,6 +39,7 @@
         "react-visibility-sensor": "^5.1.1",
         "redux": "^3.6.0",
         "redux-devtools-extension": "^2.13.2",
+        "rehype-raw": "^6.1.1",
         "sass": "^1.37.5",
         "simple-react-lightbox": "^3.6.6",
         "slick-carousel": "^1.8.1",
