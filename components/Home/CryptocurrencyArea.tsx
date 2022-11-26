@@ -82,10 +82,8 @@ const CryptocurrencyArea = () => {
             </table>
           </div>
           <div className='more-cryptocurrency-box text-center'>
-            <Link legacyBehavior href='/prices'>
-              <a className='default-btn'>
+            <Link className='default-btn' href='/prices'>
                 <i className='bx bx-purchase-tag-alt'></i> See More Prices
-              </a>
             </Link>
           </div>
         </div>
