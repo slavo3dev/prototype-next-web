@@ -346,7 +346,7 @@ const Navbar = () =>
                     </Link>
                   </div> */}
                   <div className='option-item'>
-                    <Link href='/contact' className='default-btn' activeClassName='active'>
+                    <Link href='/contact' className='default-btn'>
                         <i className='bx bxs-contact'></i> Contact Us
                     </Link>
                   </div>
