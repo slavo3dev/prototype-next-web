@@ -9,7 +9,7 @@ const Footer = () =>
   const [state, setState] = useState("idle");
   const [errorMsg, setErrorMsg] = useState(null);
 
-  const handleSubscribe = async (e) => {
+  const handleSubscribe = async (e: any) => {
     e.preventDefault();
     setState("Loading");
     try {
@@ -20,7 +20,7 @@ const Footer = () =>
       }, 900);
 
       setEmail("");
-    } catch (e) {
+    } catch (e: any) {
       setErrorMsg(e.response.data.detail);
       setState("Error");
       setTimeout(() => {
@@ -149,9 +149,9 @@ const Footer = () =>
           <div className='container'>
             <p>
               Copyright 2022 <strong>Prototype.Next</strong>. All Rights Reserved by{' '}
-              <Link href='https://www.slavo3.com/'>
-                <a target='_blank'>Slavo_3</a>
-              </Link>
+              <Link href='https://www.slavo.io/' target='_blank'>
+                Slavo_3
+            </Link>
             </p>
           </div>
         </div>

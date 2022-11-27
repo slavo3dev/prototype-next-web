@@ -9,7 +9,7 @@ const Banner = () =>
   const [state, setState] = useState("idle");
   const [ errorMsg, setErrorMsg ] = useState( null );
     
-  const handleSubscribe = async (e) => {
+  const handleSubscribe = async (e: any) => {
     e.preventDefault();
     setState("Loading");
     try {
@@ -20,7 +20,7 @@ const Banner = () =>
       }, 900);
 
       setEmail("");
-    } catch (e) {
+    } catch (e: any) {
       setErrorMsg(e.response.data.detail);
       setState("Error");
       setTimeout(() => {

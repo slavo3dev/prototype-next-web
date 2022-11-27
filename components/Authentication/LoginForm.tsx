@@ -87,8 +87,8 @@ const LoginForm = () => {
   );
 };
 
-LoginForm.getInitialProps = async ctx => {
-  
+LoginForm.getInitialProps = async (ctx: any) => {
+  console.log(`CTX: `, ctx)
 }
 
 

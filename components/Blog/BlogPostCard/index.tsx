@@ -18,21 +18,17 @@ export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, im
            <div className='col-lg-4 col-md-6'>
               <div className='single-blog-post'>
                 <div className='post-image'>
-                        <Link href={`/blog/${slug}`}>
-                    <a className='d-block'>
+                <Link legacyBehavior href={`/blog/${slug}`} className='d-block'>
                       <img src={imgBlogUrl} alt='image' />
-                    </a>
-                  </Link>
+                </Link>
                   <div className='tag-list'>
                      <a href='#'>{category}</a>
                   </div>
                 </div>
                 <div className='post-content'>
                   <h3>
-                    <Link href={`/blog/${slug}`}>
-                      <a>
+                    <Link legacyBehavior href={`/blog/${slug}`}>
                         {title}
-                      </a>
                     </Link>
                   </h3>
                   <p>
@@ -42,11 +38,9 @@ export const BlogPostCard: React.FC<BlogProps> = ({category, title, postText, im
                      <img src={imgAuthorUrl} alt='image' />
                      <a href='blog.html'>{author}</a>
                   </div>
-                  <Link href={`/blog/${slug}`}>
-                    <a className='link-btn'>
+                  <Link legacyBehavior href={`/blog/${slug}`} className='link-btn'>
                       <i className='bx bx-right-arrow-alt'></i>
-                    </a>
-                  </Link>
+                    </Link>
                 </div>
               </div>
             </div>

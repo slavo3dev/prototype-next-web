@@ -106,11 +106,11 @@ const BestSeller = () => {
                               </div>
                             </div>
                             <div className='btn-box'>
-                               <Link href='https://www.coinbase.com/accounts'>
-                                <a className='link-btn'>Buy</a>
+                               <Link className='link-btn' href='https://www.coinbase.com/accounts'>
+                                Buy
                               </Link>
-                               <Link href='https://www.coinbase.com/accounts'>
-                                <a className='link-btn'>Sell</a>
+                               <Link className='link-btn' href='https://www.coinbase.com/accounts'>
+                                Sell
                               </Link>
                             </div>
                           </div>

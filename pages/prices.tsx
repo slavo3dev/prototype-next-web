@@ -178,7 +178,7 @@ const Prices = () => {
                         </td>
                         <td>${data.total_volume}</td>
                         <td>
-                          <Link href='https://www.coinbase.com/accounts'>
+                          <Link legacyBehavior href='https://www.coinbase.com/accounts'>
                             <a className='link-btn'>Trade</a>
                           </Link>
                         </td>

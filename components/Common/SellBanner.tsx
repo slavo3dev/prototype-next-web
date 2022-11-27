@@ -34,7 +34,7 @@ const SellBanner = () => {
     setToggleState(!toggleState);
   };
 
-  const toggleSelected = (cat, index) => {
+  const toggleSelected = (cat: any, index: number) => {
     if (clicked === index) {
       return setClicked(null);
     }

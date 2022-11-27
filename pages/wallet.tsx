@@ -72,7 +72,7 @@ const Wallet = () => {
                           have control
                         </li>
                       </ul>
-                      <Link href="https://www.coinbase.com">
+                      <Link legacyBehavior href="https://www.coinbase.com">
                       <a className='default-btn'>
                         <i className='bx bxs-user'></i> Learn More
                       </a>

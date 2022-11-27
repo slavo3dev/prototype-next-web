@@ -1,9 +1,12 @@
-import RegisterArea from '../../components/Common/RegisterArea';
+import RegisterArea from 'components/Common/RegisterArea';
 import Link from 'next/link';
 
-const BlogDetails = () => {
-  return (
-    <>
+
+export const BlogPostExample = () =>
+{ 
+    
+    return (
+        <>
       <div className='blog-details-area ptb-100'>
         <div className='container'>
           <div className='blog-details-header row align-items-center justify-content-center'>
@@ -249,10 +252,8 @@ const BlogDetails = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-blog-post'>
                 <div className='post-image'>
-                  <Link href='/blog-details'>
-                    <a className='d-block'>
+                  <Link href='/blog-details' className='d-block'>
                       <img src='/images/blog/blog1.jpg' alt='image' />
-                    </a>
                   </Link>
                   <div className='tag-list'>
                     <a href='#'>Filecoin</a>
@@ -261,10 +262,8 @@ const BlogDetails = () => {
                 <div className='post-content'>
                   <h3>
                     <Link href='/blog-details'>
-                      <a>
                         How Filecoin is Up 50% in a Week & Could Take More
                         Profits
-                      </a>
                     </Link>
                   </h3>
                   <p>
@@ -275,10 +274,8 @@ const BlogDetails = () => {
                     <img src='/images/user/user1.jpg' alt='image' />
                     <a href='#'>Steven Smith</a>
                   </div>
-                  <Link href='/blog-details'>
-                    <a className='link-btn'>
+                  <Link legacyBehavior href='/blog-details' className='link-btn'>
                       <i className='bx bx-right-arrow-alt'></i>
-                    </a>
                   </Link>
                 </div>
               </div>
@@ -286,10 +283,8 @@ const BlogDetails = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-blog-post'>
                 <div className='post-image'>
-                  <Link href='/blog-details'>
-                    <a className='d-block'>
+                  <Link href='/blog-details' className='d-block'>
                       <img src='/images/blog/blog2.jpg' alt='image' />
-                    </a>
                   </Link>
                   <div className='tag-list'>
                     <a href='#'>Education</a>
@@ -298,9 +293,7 @@ const BlogDetails = () => {
                 <div className='post-content'>
                   <h3>
                     <Link href='/blog-details'>
-                      <a>
                         Coinbase Releases Investor Education Resources in 2021
-                      </a>
                     </Link>
                   </h3>
                   <p>
@@ -311,10 +304,8 @@ const BlogDetails = () => {
                     <img src='/images/user/user2.jpg' alt='image' />
                     <a href='blog.html'>Sarah Taylor</a>
                   </div>
-                  <Link href='/blog-details'>
-                    <a className='link-btn'>
+                  <Link legacyBehavior href='/blog-details' className='link-btn'>
                       <i className='bx bx-right-arrow-alt'></i>
-                    </a>
                   </Link>
                 </div>
               </div>
@@ -322,10 +313,8 @@ const BlogDetails = () => {
             <div className='col-lg-4 col-md-6'>
               <div className='single-blog-post'>
                 <div className='post-image'>
-                  <Link href='/blog-details'>
-                    <a className='d-block'>
+                  <Link legacyBehavior href='/blog-details' className='d-block'>
                       <img src='/images/blog/blog3.jpg' alt='image' />
-                    </a>
                   </Link>
                   <div className='tag-list'>
                     <a href='#'>Bitcoin</a>
@@ -333,11 +322,9 @@ const BlogDetails = () => {
                 </div>
                 <div className='post-content'>
                   <h3>
-                    <Link href='/blog-details'>
-                      <a>
+                    <Link legacyBehavior href='/blog-details'>
                         World’s Largest Bitcoin Conference Coming To Miami in
                         June
-                      </a>
                     </Link>
                   </h3>
                   <p>
@@ -348,10 +335,8 @@ const BlogDetails = () => {
                     <img src='/images/user/user3.jpg' alt='image' />
                     <a href='#'>David Warner</a>
                   </div>
-                  <Link href='/blog-details'>
-                    <a className='link-btn'>
+                  <Link className='link-btn' href='/blog-details'>
                       <i className='bx bx-right-arrow-alt'></i>
-                    </a>
                   </Link>
                 </div>
               </div>
@@ -361,7 +346,5 @@ const BlogDetails = () => {
       </div>
       <RegisterArea ctaImage='/images/man.png' />
     </>
-  );
+)
 };
-
-export default BlogDetails;
