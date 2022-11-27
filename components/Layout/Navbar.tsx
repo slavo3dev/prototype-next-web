@@ -2,12 +2,19 @@ import React,{useState, useEffect} from 'react';
 // import Link from '../../utils/ActiveLink';
 import Image from 'next/image'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-const Navbar = () => {
+const Navbar = () =>
+{
 
-  const [showMenu, setshowMenu] = useState(false);
+ const router = useRouter();
+ const [ showMenu, setshowMenu ] = useState( false )
+    
+    const activeLinkHome = router.pathname == "/" ? "active" : ""
+    const activeLinkListening = router.pathname == "/prices" ? "active" : ""
+    const activeLinkBlog = router.pathname == "/blog" ? "active" : ""
 
-  const toggleMenu = () => {
+ const toggleMenu = () => {
     setshowMenu(!showMenu);
   };
 
@@ -47,7 +54,7 @@ const Navbar = () => {
               <div className='responsive-others-option'>
                 <div className='d-flex align-items-center'>
                   <div className='option-item'>
-                    <Link className='login-btn' href='/authentication' activeClassName='active'>
+                    <Link className='login-btn' href='/authentication'>
                         <i className='bx bx-log-in'></i>
                     </Link>
                   </div>
@@ -78,7 +85,7 @@ const Navbar = () => {
             <div className='collapse navbar-collapse mean-menu'>
               <ul className='navbar-nav'>
                 <li className='nav-item'>
-                  <Link className='nav-link' href='/' activeClassName='active'>
+                  <Link className={`nav-link ${activeLinkHome}` } href='/'>
                     Home
                   </Link>
                   {/*
@@ -264,13 +271,13 @@ const Navbar = () => {
                   </ul>
                 </li> */}
                 <li className='nav-item'>
-                  <Link legacyBehavior  className='nav-link' href='/prices' activeClassName='active'>
+                    <Link className={`nav-link ${ activeLinkListening }`} href='/prices'>
                     Listings
                  </Link>
                 </li>
                 <li className='nav-item'>
-                  <Link href='/blog' className='nav-link' activeClassName='active'>
-                    <div>Blog</div>
+                  <Link href='/blog' className={`nav-link ${ activeLinkBlog }`}>
+                    Blog
                 </Link>
                 </li>
                 {/* <li className='nav-item megamenu support'>
@@ -340,7 +347,7 @@ const Navbar = () => {
                   </div> */}
                   <div className='option-item'>
                     <Link href='/contact' className='default-btn' activeClassName='active'>
-                        <div><i className='bx bxs-contact' ></i> Contact Us</div>
+                        <i className='bx bxs-contact'></i> Contact Us
                     </Link>
                   </div>
                   <div className='option-item'>
