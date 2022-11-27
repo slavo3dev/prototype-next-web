@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import Link from 'next/link';
+// import Link from 'next/link';
 
-const TokensArea = ({ days, hours, minutes, seconds }) => {
+const TokensArea = ({ days, hours, minutes, seconds }: any) => {
 
   return (
     <>
@@ -55,12 +55,12 @@ const TokensArea = ({ days, hours, minutes, seconds }) => {
                   </span>
                 </div> */}
                 {/* <div className='btn-box'>
-                  <Link href='#'>
+                  <Link legacyBehavior  legacyBehavior  href='#'>
                     <a className='default-btn'>
                       <i className='bx bxs-discount'></i> Buy Tokens 55% Off
                     </a>
                   </Link>
-                  <Link href='#'>
+                  <Link legacyBehavior  legacyBehavior  href='#'>
                     <a target='_blank' className='default-btn'>
                       <i className='bx bxs-file'></i> White Pappers
                     </a>

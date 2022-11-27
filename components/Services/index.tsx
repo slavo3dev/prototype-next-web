@@ -41,7 +41,7 @@ function Services() {
                 onMouseOver={() => setOpen("p1")}
               >
                 <div className="icon-bx-md radius bg-yellow shadow-yellow">
-					<Link className="icon-cell" href="#">
+					<Link legacyBehavior  className="icon-cell" href="#">
 						<i className="flaticon-office"></i>
 					</Link>  
                 </div>
@@ -69,7 +69,7 @@ function Services() {
                 onMouseOver={() => setOpen("p2")}
               >
                 <div className="icon-bx-md radius bg-red shadow-red">
-					<Link className="icon-cell" href="#">	
+					<Link legacyBehavior  className="icon-cell" href="#">	
 							<i className="flaticon-website"></i>
 					</Link>	
                 </div>
@@ -97,7 +97,7 @@ function Services() {
                 onMouseOver={() => setOpen("p3")}
               >
                 <div className="icon-bx-md radius bg-green shadow-green">
-					<Link href="#" className="icon-cell">	
+					<Link legacyBehavior  href="#" className="icon-cell">	
 						<i className="flaticon-pie-charts"></i>
 					</Link>	
                 </div>

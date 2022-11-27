@@ -20,7 +20,7 @@ const Footer = () =>
       }, 900);
 
       setEmail("");
-    } catch (e) {
+    } catch (e: any) {
       setErrorMsg(e.response.data.detail);
       setState("Error");
       setTimeout(() => {
