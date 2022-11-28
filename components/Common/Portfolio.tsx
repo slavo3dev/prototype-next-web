@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Image from 'next/image'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -46,7 +48,9 @@ const Portfolio: React.FC<PortfolioProps> = ({
             <div className='row align-items-center m-0'>
               <div className='col-xl-5 col-lg-6 col-md-12 p-0'>
                 <div className='content-slides'>
-                  {display ? (
+                { display ? (
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
                     <OwlCarousel {...options}>
                       <div className='content'>
                         <h3>Smart Contracts Development</h3>

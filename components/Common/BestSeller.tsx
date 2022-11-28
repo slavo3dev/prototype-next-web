@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import dynamic from 'next/dynamic';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -83,7 +85,9 @@ const BestSeller = () => {
                   </p>
                 </div>
                 <div className='cryptocurrency-slides'>
-                  {display ? (
+                    { display ? (
+                    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                    // @ts-ignore
                     <OwlCarousel
                       {...options}
                     >

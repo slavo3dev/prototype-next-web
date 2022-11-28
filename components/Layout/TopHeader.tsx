@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import axios from 'axios';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
 const options = {
@@ -65,7 +67,9 @@ const TopHeader = () => {
       <div className='value-trade-area'>
         <div className='container'>
           <div className='value-trade-slides'>
-            {display ? (
+            { display ? (
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
               <OwlCarousel
                 {...options}
               >
