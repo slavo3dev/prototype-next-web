@@ -36,12 +36,12 @@ const Banner = () =>
             <div className='col-xl-5 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-content'>
                 <span className='sub-title'>
-                  Smart Contracts are self-verifying due to automated possibilities <br />Apply to Your Business
+                  We are Transforming your imagination into a Digital Product. <br />Improve your online business
                 </span>
-                <h1>A Trusted & Secure Decentralized Apps</h1>
+                <h1>Prototype Your Digital Product</h1>
                 <p>
-                  Your technology partner for developing peer-to-peer Decentralized Apps.
-                              </p>
+                  Your technology partner for developing Web/Mobile applications.
+                </p>
                               
                 {state === "Success" && <p>Awesome, you have been subscribed to Prototype.NEXT</p> }
                 <form data-toggle='validator'>

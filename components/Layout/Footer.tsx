@@ -135,10 +135,10 @@ const Footer = () =>
                 <ul className='footer-contact-info'>
                   <li>Address: 425, NE 22nd Street, Miami, Florida 33137</li>
                   <li>
-                    Email: <a href='mailto:slavo@slavo3.com'>slavo@slavo3.com</a>
+                    Email: <a href='mailto:slavo@slavo3.com'>slavo@slavo.io</a>
                   </li>
                   <li>
-                    Phone: <a href='tel:+7867024261'>+1-786-702-4261</a>
+                    Phone: <a href='tel:+7867024261'>+1-305-560-0950</a>
                   </li>
                 </ul>
               </div>
@@ -150,7 +150,7 @@ const Footer = () =>
             <p>
               Copyright 2022 <strong>Prototype.Next</strong>. All Rights Reserved by{' '}
               <Link href='https://www.slavo.io/' target='_blank'>
-                Slavo_3
+                Slavo
             </Link>
             </p>
           </div>
