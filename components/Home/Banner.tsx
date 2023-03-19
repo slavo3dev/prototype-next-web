@@ -36,7 +36,7 @@ const Banner = () =>
             <div className='col-xl-5 col-lg-6 col-md-12 p-0'>
               <div className='banner-wrapper-content'>
                 <span className='sub-title'>
-                  We are Transforming your imagination into a Digital Product. <br />Improve your online business
+                  We are Transforming your imagination into a Digital Product. <br />Improve your online business, and make a bigger impact
                 </span>
                 <h1>Prototype Your Digital Product</h1>
                 <p>
