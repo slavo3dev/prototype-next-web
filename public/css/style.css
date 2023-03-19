@@ -1375,6 +1375,7 @@ Main Banner Area CSS
   background-color: var(--optionalColor);
   padding: 4px 20px;
   font-size: 14px;
+  box-shadow: 0 0 4px #707070;
 }
 
 .banner-wrapper-content h1 {
