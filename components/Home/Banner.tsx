@@ -66,7 +66,7 @@ const Banner = () =>
                 <div className='banner-wrapper-image'>
                     <Image src='/images/banner/banner-img5.webp' alt='Prototype.NEXT - Image' width={ 600 } height={500} loading="lazy" />
                 </div>
-                    {state === "Error" &&  alert( "Oops Something went WORONG \nPlease Try Again or You are already a member !!!" ) } 
+                    {state === "Error" &&  alert( "Oops... Something went WORONG \nPlease Try Again or You are already a member !!!" ) } 
             </>             
             </div>
           </div>
