@@ -292,7 +292,8 @@ textarea.form-control {
 Navbar Area CSS
 =================================================*/
 .navbar-area {
-  background-color: var(--whiteColor);
+  background: radial-gradient(circle at center,
+    rgb(255, 255, 255),rgb(239, 238, 238),rgb(255, 255, 255)),100% ;
 }
 
 .navbar-area .container {
