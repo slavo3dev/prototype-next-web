@@ -224,7 +224,7 @@ p:last-child {
 /*form-control*/
 .form-control {
   border-radius: 0;
-  background-color: #f9f9f9 !important;
+  background-color: #eeebeb !important;
   -webkit-box-shadow: unset !important;
           box-shadow: unset !important;
   -webkit-transition: var(--transition);
