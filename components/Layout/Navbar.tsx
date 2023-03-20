@@ -338,13 +338,13 @@ const Navbar = () =>
               </ul>
               <div className='others-option'>
                 <div className='d-flex align-items-center'>
-                  {/* <div className='option-item'>
+                  <div className='option-item'>
                     <Link legacyBehavior  href='/authentication' activeClassName='active'>
                       <a className='login-btn'>
                         <i className='bx bx-log-in'></i> Login
                       </a>
                     </Link>
-                  </div> */}
+                  </div>
                   <div className='option-item'>
                     <Link href='/contact' className='default-btn'>
                         <i className='bx bxs-contact'></i> Contact Us
