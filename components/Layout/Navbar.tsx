@@ -335,6 +335,11 @@ const Navbar = () =>
                     </li>
                   </ul>
                 </li> */}
+                <li className='nav-item'>
+                  <Link href='/ai' className={`nav-link ${ activeLinkBlog }`}>
+                    NFT AI
+                </Link>
+                </li>
               </ul>
               <div className='others-option'>
                 <div className='d-flex align-items-center'>
