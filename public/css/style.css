@@ -3537,7 +3537,7 @@ Features Area CSS
   width: 200px;
   height: 200px;
   position: relative;
-  background-color: #ddf9fc;
+  background-color: #86f3ff;
   -webkit-animation: border-transform 10s linear infinite alternate forwards;
           animation: border-transform 10s linear infinite alternate forwards;
   margin-left: auto;
@@ -3557,11 +3557,11 @@ Features Area CSS
 }
 
 .features-box .icon.bg-ffefc7 {
-  background-color: #ffefc7;
+  background-color: #facd5d;
 }
 
 .features-box .icon.bg-ffc9c2 {
-  background-color: #ffc9c2;
+  background-color: #f9a095;
 }
 
 .features-box h3 {
