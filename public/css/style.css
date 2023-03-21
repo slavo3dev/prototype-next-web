@@ -7585,8 +7585,9 @@ Go Top CSS
 
 .nft-heading {
   text-align: center;
+  font-size: 20px;
   color: rgb(202, 193, 193);
-  margin-top: 0px;
+  margin-top: 20px;
 }
 
 code {

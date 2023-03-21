@@ -23,7 +23,7 @@ const Blog: NextPage = ( { posts }: any ) =>
       />
       <body className="nft-body">
   
-    <h1 className="nft-heading">Make unique NFT with our AI bot</h1>
+    <h1 className="nft-heading">Make a unique NFT with our AI bot</h1>
   
   <div className="nft">
     <div className='main'>
