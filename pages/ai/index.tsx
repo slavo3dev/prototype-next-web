@@ -21,7 +21,7 @@ const Blog: NextPage = ( { posts }: any ) =>
         pageTitle='Our Articles'
         pageSubTitle='Dicentralized Web | Blockchain | NFT | Crypto'
       />
-      <body className="nft-body">
+      <main className="nft-body">
   
     <h1 className="nft-heading">Make a unique NFT with our AI bot</h1>
   
@@ -48,7 +48,7 @@ const Blog: NextPage = ( { posts }: any ) =>
       </div>
     </div>
   </div>
-</body>
+</main>
     </>
   );
 };
