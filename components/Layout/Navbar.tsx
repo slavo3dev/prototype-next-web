@@ -58,20 +58,17 @@ const Navbar = () =>
                         <i className='bx bx-log-in'></i>
                     </Link>
                   </div>
-                 
-                  <div className='option-item'>
+                  {/* For the Future References */}
+                  {/* <div className='option-item'>
                     <select className='form-select'>
                       <option value='0'>English</option>
-                      
-                      {/* 
-                      Add Languages in the future 
                       <option value='1'>Türkçe</option>
                       <option value='2'>Español</option>
                       <option value='3'>한국어</option>
                       <option value='4'>Italiano</option>
-                      <option value='5'>Serbian</option> */}
+                      <option value='5'>Serbian</option>
                     </select>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -350,18 +347,16 @@ const Navbar = () =>
                         <i className='bx bxs-contact'></i> Contact Us
                     </Link>
                   </div>
-                  <div className='option-item'>
+                  {/* <div className='option-item'>
                     <select className='form-select'>
                       <option value='0'>English</option>
-                      {/*
-                      Add Languages
                       <option value='1'>Türkçe</option>
                       <option value='2'>Español</option>
                       <option value='3'>한국어</option>
                       <option value='4'>Italiano</option>
-                      <option value='5'>Polski</option> */}
+                      <option value='5'>Polski</option>
                     </select>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
