@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { FC } from "react";
+import { FC, useState, useEffect } from "react";
 import classes from "./postcontent.module.css";
 import { PostHeader } from "../PostHeader";
 import ReactMarkdown from "react-markdown";
@@ -13,12 +13,26 @@ interface PostContentDataType
     post: any
 }
 
+const CodeBlock = ({ className, children }: { className?: string; children: React.ReactNode }) => {
+	const [isMounted, setIsMounted] = useState(false);
+	// No need to destructure code here, directly use className and children
+	const language = className ? className.split("-")[1] : "javascript";
 
-export const PostContent: FC<PostContentDataType> = ({ post }) =>
-{
-	const imgPath = `/images/post-img/${ post.image }`;
-    
-	const customRenderers = {
+	useEffect(() => {
+		setIsMounted(true);
+	}, []);
+
+	// Use children directly instead of code.children
+	return (
+		isMounted ? (
+			<SyntaxHighlighter style={atomDark} language={language} children={children} />
+		) : (
+			<p>Loading...</p> // This can be a placeholder or null if you prefer not to show anything
+		)
+	);
+};
+
+const customRenderers = {
 		p(paragraph: any) {
 			const { node } = paragraph;
 			if (node.children[0].tagName === "img" ) {
@@ -40,17 +54,15 @@ export const PostContent: FC<PostContentDataType> = ({ post }) =>
 		},
 
 		code(code: any) {
-			const { className, children } = code;
-			const language = className.split("-")[1]; // className is something like language-js => We need the "js" part here
-			return (
-				<SyntaxHighlighter
-					style={atomDark}
-					language={language}
-					children={children}
-				/>
-			);
+		    return <CodeBlock className={code.className} children={code.children} />;	
 		},
 	};
+
+
+export const PostContent: FC<PostContentDataType> = ({ post }) =>
+{
+	const imgPath = `/images/post-img/${ post.image }`;
+    
 	return (
 		<article className={classes.content}>
 			<PostHeader title={post.title} imgSrc={imgPath} />

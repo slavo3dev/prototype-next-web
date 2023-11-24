@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/slavo_3/Documents/projects/prototype-next-web/logs/.5f168584814cb29c303ee393c906088cacd76d76-audit.json",
+    "files": [
+        {
+            "date": 1700868315333,
+            "name": "/Users/slavo_3/Documents/projects/prototype-next-web/logs/keplerCliNative-2023-11-24.log",
+            "hash": "3a30a24f777aeb9045268fc66ee7c26a"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/Users/slavo_3/Documents/projects/prototype-next-web/logs/.df69f6e223e3783153b17e6ebf965313e88cf3e8-audit.json",
+    "files": [
+        {
+            "date": 1700868315332,
+            "name": "/Users/slavo_3/Documents/projects/prototype-next-web/logs/error-2023-11-24.log",
+            "hash": "a1daa00731a67735449e09dd891bd6bf"
+        }
+    ]
+}
