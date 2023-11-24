@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Image from 'next/image'
 
@@ -28,6 +28,7 @@ const Footer = () =>
       }, 900);
     }
   };
+    
   return (
     <>
       <footer className='footer-area'>
@@ -39,7 +40,8 @@ const Footer = () =>
                    <Image src='/images/prototype.next-logo.svg' alt='Prototype.NEXT Blog' height={ 50 } width={50} />
                 </a>
                   <div className='newsletter-form'>
-                  {state === "Success" && <h2>Awesome, you have been subscribed to Prototype.NEXT</h2> }                
+                  {state === "Success" && <h2>Awesome, you have been subscribed to Prototype.NEXT</h2> }  
+                  {state === "Error" && <h1>"Oops Something went WORONG \nPlease Try Again or You are already a member !!!"</h1> }             
                   <p>SUBSCRIBE TO OUR NEWSLETTER</p>
                   <form data-toggle='validator'>
                     <input
@@ -53,8 +55,7 @@ const Footer = () =>
                     />
                     <button type='submit' onClick={handleSubscribe}>
                       Subscribe Now <i className='bx bx-paper-plane'></i>
-                    </button>
-                    {state === "Error" && alert("Oops Something went WORONG \nPlease Try Again or You are already a member !!!")}   
+                    </button>   
                     <div
                       id='validator-newsletter'
                       className='form-result'
