@@ -53,7 +53,6 @@ const CryptocurrencyArea = () => {
                       <td>
                         <div className='d-flex align-items-center crypto-image'>
                             <Image src={ data.image } alt='Prototype.NEXT' width={ 20 } height={ 20 } />
-                            {console.log("Data: ", data.image)}
                             <h3 className='mb-0 crypto-name'>{data.name}</h3>
                         </div>
                       </td>
