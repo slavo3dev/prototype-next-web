@@ -11,7 +11,7 @@ interface PropsNotification {
 }
 export const Notification: React.FC<PropsNotification> = (props) => {
   const { title, message, status } = props;
-
+  const element = document.getElementById("notifications");
   let statusClasses = "";
 
   if (status === "success") {
@@ -24,11 +24,11 @@ export const Notification: React.FC<PropsNotification> = (props) => {
 
   const cssClasses = `${classes.notification} ${statusClasses}`;
 
-  return ReactDOM.createPortal(
+  return element && ReactDOM.createPortal(
     <div className={cssClasses}>
       <h2>{title}</h2>
       <p>{message}</p>
     </div>,
-    document.getElementById("notifications"),
+    element,
   );
 };
