@@ -34,7 +34,7 @@ const Banner = () => {
     setToggleState(!toggleState);
   };
 
-  const toggleSelected = (cat, index) => {
+  const toggleSelected: (cat: any, index: number) => void = (cat, index) => {
     if (clicked === index) {
       return setClicked(null);
     }
