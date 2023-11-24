@@ -5,8 +5,8 @@ import { PostHeader } from "../PostHeader";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from 'rehype-raw'
 import Image from "next/image";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
+// import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+// import { atomDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 interface PostContentDataType
 {
@@ -24,8 +24,9 @@ const CodeBlock = ({ className, children }: { className?: string; children: Reac
 
 	// Use children directly instead of code.children
 	return (
-		isMounted ? (
-			<SyntaxHighlighter style={atomDark} language={language} children={children} />
+        isMounted ? (
+            <p>Loading...</p>
+			// <SyntaxHighlighter style={atomDark} language={language} children={children} />
 		) : (
 			<p>Loading...</p> // This can be a placeholder or null if you prefer not to show anything
 		)
