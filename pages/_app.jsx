@@ -1,7 +1,5 @@
 import { Provider } from 'react-redux';
 import { useStore } from '../store';
-import { useEffect, useState } from "react";
-
 
 import '../public/css/animate.min.css';
 import '../public/css/bootstrap.min.css';
