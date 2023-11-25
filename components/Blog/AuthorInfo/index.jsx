@@ -1,9 +1,10 @@
 
 import { Media, Image } from "react-bootstrap";
 
-export const AuthorInfo: React.FC = () =>
+export const AuthorInfo = () =>
 {
     return (
+        <>
             <Media className="mb-4 admin-intro">
                 <Image
                     roundedCircle
@@ -21,5 +22,6 @@ export const AuthorInfo: React.FC = () =>
                     </p>
                 </Media.Body>
             </Media>
+        </>
         )
 }
