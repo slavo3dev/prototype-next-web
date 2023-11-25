@@ -7,6 +7,7 @@ module.exports = {
   },
   webpack: function (config, options) {
     config.experiments = {};
+    config.experiments.layers = true;
     return config;
   },
 };
