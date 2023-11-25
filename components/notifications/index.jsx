@@ -4,12 +4,8 @@ import React from "react";
 
 import classes from "./notification.module.css";
 
-interface PropsNotification { 
-    title: string,
-    message: string, 
-    status: string  
-}
-export const Notification: React.FC<PropsNotification> = (props) => {
+
+export const Notification = (props) => {
   const { title, message, status } = props;
   const element = document.getElementById("notifications");
   let statusClasses = "";

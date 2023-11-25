@@ -1,19 +1,6 @@
 import { Card } from "react-bootstrap"
 
-interface CardPostProps
-{
-  title: string,
-  subtitle: string,
-  date: string, 
-  image: string,
-  author: {
-    avatar: string,
-    url: string,
-    name: string
-  }
-}
-
-export const CardItem: React.FC<CardPostProps> = ( { title, subtitle, date, image, author } ) =>
+export const CardItem = ( { title, subtitle, date, image, author } ) =>
 {
     return (
         <Card className={`fj-card`}>

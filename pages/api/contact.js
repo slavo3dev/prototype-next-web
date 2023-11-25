@@ -7,7 +7,12 @@ export default async (req, res) => {
 
   if (req.method === "POST") {
     if (
-      (!email || !email.includes("@") || !name || name.trim() === "" || !phone_number|| phone_number.trim() === "",
+      (!email ||
+        !email.includes("@") ||
+        !name ||
+        name.trim() === "" ||
+        !phone_number ||
+        phone_number.trim() === "",
       !subject ||
         subject.trim() === "" ||
         !message ||
@@ -20,7 +25,7 @@ export default async (req, res) => {
   }
 
   // Store to DB
-    const storeMessage: any = {
+  const storeMessage = {
     phone_number,
     subject,
     name,

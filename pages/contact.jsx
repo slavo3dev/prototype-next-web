@@ -3,13 +3,6 @@ import { PageBanner, Notification } from '../components';
 import { notificationStatus, storeData } from "lib";
 import Form from 'react-bootstrap/Form';
 
-interface NotificationSatus
-{ 
-      status: string 
-      title: string
-      message: string
-}
-
 const Contact = () =>
 {
 
@@ -45,7 +38,7 @@ const Contact = () =>
     }
   };
 
-  let notification: NotificationSatus = notificationStatus(reqStatus);
+  let notification = notificationStatus(reqStatus);
     
   return (
     <>

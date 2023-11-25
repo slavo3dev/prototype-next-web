@@ -1,7 +1,7 @@
 
 import { Card } from "react-bootstrap"
 
-export const CardListItem: React.FC = () =>
+export const CardListItem = () =>
 {
     return (
             <>
